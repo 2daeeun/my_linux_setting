@@ -12,26 +12,26 @@ This is my personal Linux Mint setting.
 * Rhythmbox
 * Drawing
 
-## Install from Software Manager
-•Terminator
-•VLC
-•Kolourpaint
+### Install from Software Manager
+* Terminator
+* VLC
+* Kolourpaint
 
-## Create shortcuts
-### First go to Setting.
+### Create shortcuts
+#### First go to Setting.
 * "Maximize Windows" setting path is (Categories>Windows>Maximize windows). And setting (Super+Up)
 * "Close Windows" add setting is (Categories>Windows>Close windows). And setting (Super+X)
 * "Web browser" shortcut path is (Categories>Launchers>Launch web browser). And setting (Super+E)
 * "Home folder" shortcut path is (Categories>Launchers>Home folder). And setting (Super + F)
 * "Terminator" shortcut path is (Categories>Launchers>Custom Shortcuts). After click (Add custom shortcut), set (Name) and (Command) as a "terminator" and setting shortcut (Super+T)
 
-## Register auto-run commands at boot time
-### Path & File name
+### Register auto-run commands at boot time
+#### Path & File name
 ```swift
 sudo nvim /etc/profile.d/startup.sh
 ```
 
-### Scirtp
+#### Scirtp
 ```swift
 #!/bin/bash
 
@@ -43,18 +43,18 @@ rfkill block bluetooth &
 fcitx &
 ```
 
-## Active "Numlock"key
+### Active "Numlock"key
 ```swift
 sudo apt-get install numlockx
 ```
 Then go (Login Window -> Settings), set (Activate numlock)
 
-## Install "git"
+### Install "git"
 ```swift
 apt install git
 ```
 
-## Install "Chrome"
+### Install "Chrome"
 ```swift
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
@@ -64,7 +64,7 @@ sudo apt install python3-apt
 sudo rm -rf /etc/apt/sources.list.d/google.list
 ```
 
-## Remove "Firefox"
+### Remove "Firefox"
 ```swift
 sudo apt-get purge firefox
 rm -r .mozilla/firefox/
@@ -74,43 +74,43 @@ rm -r /usr/lib/firefox-addons/
 rm -r .mozilla
 ```
 
-## Support "PPA"
+### Support "PPA"
 ```swift
 sudo apt-get -y install software-properties-common
 ```
 
-## Install "TLP Laptop battery saver"
+### Install "TLP Laptop battery saver"
 ```swift
 sudo add-apt-repository -y ppa:linrunner/tlp
 sudo apt-get install -y tlp tlp-rdw
 sudo tlp start
 ```
 
-## Install "Axel"
+### Install "Axel"
 ```swift
 sudo apt-get install axel
 ```
 Use example : axel -n x http://~~ .mp4
 
-## Install "stdio.h" header file
+### Install "stdio.h" header file
 ```swift
 sudo apt-get install libc6-dev
 ```
 
-## Install "Nanum fonts"
+### Install "Nanum fonts"
 ```swift
 sudo apt-get install fonts-nanum
 ```
 
-## Install "Camera"
+### Install "Camera"
 ```swift
 sudo apt-get install cheese
 ```
 
-## Install "VirtualBox"
+### Install "VirtualBox"
 download in "www.virtualbox.org/wiki/Linux_Downloads"
 
-## Install "NeoVim"
+### Install "NeoVim"
 ```swift
 sudo apt-get install software-properties-common
 sudo apt-get install fuse libfuse2 git python3-pip ack-grep -y
@@ -123,7 +123,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.g
 If you want to run nvim with just 'v' in the terminal,
 you input (alias v='nvim') on the last line of (~/.zshrc)
 
-## NeoVim setting & Plugin
+### NeoVim setting & Plugin
 First let's set the Colorscheme. Theme is onedark
 Neovim is different nomal Vim. Nomal Vim Colorscheme basic folder path is (/usr/share/vim/vim81/colors).
 The number of vim81 may differ from version to version.
@@ -140,7 +140,7 @@ mkdir ~/.config/nvim
 Download (init.vim) file. and put in a (.config/nvim) folder.
 Then do "PlugInstall" and "UpdateRemotePlugins".
 
-## Install "Zsh" & "Oh-My-Zsh"
+### Install "Zsh" & "Oh-My-Zsh"
 ```swift
 sudo apt-get install zsh
 chsh -s /usr/bin/zsh
@@ -148,13 +148,13 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 sudo apt install fonts-powerline
 ```
 
-## Change "Oh-My-Zsh" theme
+### Change "Oh-My-Zsh" theme
 Open the .zshrc file, and Change the robbyrussell theme to the agnoster theme.
 ```swift
 ZSH_THEME="robbyrussell"   ==>   ZSH_THEME="agnoster"
 ```
 
-## Install "Zsh" plugin
+### Install "Zsh" plugin
 Open the .zshrc file and change plugins=(git) on 71 line as follows.
 ```swift
 plugins=(
@@ -172,7 +172,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
 
-## Prevent "Oh-My-Zsh" font breaking
+### Prevent "Oh-My-Zsh" font breaking
 ```swift
 git clone https://github.com/powerline/fonts.git
 cd fonts
@@ -180,7 +180,7 @@ cd fonts
 sudo rm -r ~/fonts/
 ```
 
-## Fin
+### Fin
 ```swift
 sudo apt-get update && sudo apt-get upgrade && sudo apt autoremove -y && sudo apt autoclean -y
 ```
