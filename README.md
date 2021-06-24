@@ -1,5 +1,5 @@
 # My Linux Mint Setting
-This is my personal Linux Mint setting.
+This is my personal Linux Mint setting.  
 ~~It is defined to Linux Mint, but it is probably similar in other Linux.~~
 
 ### Remove from Software Manager
