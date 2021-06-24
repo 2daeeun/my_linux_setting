@@ -2,6 +2,9 @@
 This is my personal Linux Mint setting.  
 ~~It is defined to Linux Mint, but it is probably similar in other Linux.~~
 
+
+
+
 ### Remove from Software Manager
 * Thunderbird Mail
 * nano
