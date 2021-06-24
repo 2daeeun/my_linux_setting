@@ -5,6 +5,8 @@ This is my personal Linux Mint setting.
 
 
 
+
+
 ### Remove from Software Manager
 * Thunderbird Mail
 * nano
