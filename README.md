@@ -7,7 +7,7 @@ This is my personal Linux Mint setting.
 * Kolourpaint
 
 ### Create shortcuts
-##### 1. First go to Setting.
+#### 1. First go to Setting.
 * "Maximize Windows" setting path is (Categories>Windows>Maximize windows). And setting (Super+Up)
 * "Close Windows" add setting is (Categories>Windows>Close windows). And setting (Super+X)
 * "Web browser" shortcut path is (Categories>Launchers>Launch web browser). And setting (Super+E)
