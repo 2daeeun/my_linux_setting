@@ -1,12 +1,12 @@
 # My Linux Mint Setting
 This is my personal Linux Mint setting.  
 
-### *Install from Software Manager
+*### Install from Software Manager
 * Terminator
 * VLC
 * Kolourpaint
 
-### Create shortcuts
+*### Create shortcuts
 ```swift
 First go to (Setting>Keyboard) then...
 
@@ -17,13 +17,8 @@ First go to (Setting>Keyboard) then...
 * "Terminator" shortcut path is (Categories>Launchers>Custom Shortcuts). After click (Add custom shortcut), set (Name) and (Command) as a "terminator" and setting shortcut (Super+T)
 ```
 
-### Register auto-run commands at boot time
-#### 1. Path & File name
-```swift
-sudo nvim /etc/profile.d/startup.sh
-```
-
-#### 2. Scirtp
+*### Register auto-run commands at boot time
+Go to "/etc/profile.d" then create "startup.sh". "startup.sh" script is as follows.
 ```swift
 #!/bin/bash
 
