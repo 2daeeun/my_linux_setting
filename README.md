@@ -6,10 +6,6 @@ This is my personal Linux Mint setting.
 * VLC
 * Kolourpaint
   
-  
-  
-  
-  
 ### Create shortcuts
 ```swift
 First go to (Setting>Keyboard) then...
@@ -22,7 +18,7 @@ First go to (Setting>Keyboard) then...
 ```
 
 ### Register auto-run commands at boot time
-Go to "/etc/profile.d" then create "startup.sh". "startup.sh" script is as follows.
+Go to (/etc/profile.d) then create "startup.sh" file. "startup.sh" script is as follows.
 ```swift
 #!/bin/bash
 
@@ -112,10 +108,10 @@ pip3 install --user neovim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 If you want to run nvim with just 'v' in the terminal,
-you input (alias v='nvim') on the last line of (~/.zshrc)
+you input (alias v='nvim') on the last line of (~/.zshrc) file.
 
 ### NeoVim setting & Plugin
-First let's set the Colorscheme. Theme is onedark
+First let's set the Colorscheme. Theme is onedark.  
 Neovim is different nomal Vim. Nomal Vim Colorscheme basic folder path is (/usr/share/vim/vim81/colors).
 The number of vim81 may differ from version to version.
 ```swift
