@@ -5,8 +5,8 @@ This is my personal Linux Mint setting.
 * Terminator
 * VLC
 * Kolourpaint
-  #
-  #
+###
+###
 ### Create shortcuts
 ```swift
 First go to (Setting>Keyboard) then...
