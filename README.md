@@ -6,6 +6,8 @@ This is my personal Linux Mint setting.
 * VLC
 * Kolourpaint
    
+   
+   
 ### Create shortcuts
 ##### First go to Setting.
 * "Maximize Windows" setting path is (Categories>Windows>Maximize windows). And setting (Super+Up)
