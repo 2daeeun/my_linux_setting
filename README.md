@@ -7,6 +7,9 @@ This is my personal Linux Mint setting.
 * Kolourpaint
   
   
+  
+  
+  
 ### Create shortcuts
 ```swift
 First go to (Setting>Keyboard) then...
