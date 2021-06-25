@@ -4,7 +4,7 @@ This is my personal Linux Mint setting.
 ### Install from Software Manager
 * Terminator
 * VLC
-* Kolourpaint   
+* Kolourpaint         
 ### Create shortcuts
 ##### First go to Setting.
 * "Maximize Windows" setting path is (Categories>Windows>Maximize windows). And setting (Super+Up)
