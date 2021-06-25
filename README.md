@@ -7,12 +7,15 @@ This is my personal Linux Mint setting.
 * Kolourpaint
 
 ### Create shortcuts
-#### 1. First go to Setting.
+```swift
+First go to (Setting>Keyboard) then...
+
 * "Maximize Windows" setting path is (Categories>Windows>Maximize windows). And setting (Super+Up)
 * "Close Windows" add setting is (Categories>Windows>Close windows). And setting (Super+X)
 * "Web browser" shortcut path is (Categories>Launchers>Launch web browser). And setting (Super+E)
 * "Home folder" shortcut path is (Categories>Launchers>Home folder). And setting (Super + F)
 * "Terminator" shortcut path is (Categories>Launchers>Custom Shortcuts). After click (Add custom shortcut), set (Name) and (Command) as a "terminator" and setting shortcut (Super+T)
+```
 
 ### Register auto-run commands at boot time
 #### 1. Path & File name
