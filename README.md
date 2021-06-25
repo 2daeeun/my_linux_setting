@@ -1,21 +1,5 @@
 # My Linux Mint Setting
 This is my personal Linux Mint setting.  
-~~It is defined to Linux Mint, but it is probably similar in other Linux.~~
-
-
-
-
-
-
-### Remove from Software Manager
-* Thunderbird Mail
-* nano
-* Pix
-* Redshift
-* Onboard
-* Celluloid
-* Rhythmbox
-* Drawing
 
 ### Install from Software Manager
 * Terminator
@@ -23,7 +7,7 @@ This is my personal Linux Mint setting.
 * Kolourpaint
 
 ### Create shortcuts
-#### First go to Setting.
+##### First go to Setting.
 * "Maximize Windows" setting path is (Categories>Windows>Maximize windows). And setting (Super+Up)
 * "Close Windows" add setting is (Categories>Windows>Close windows). And setting (Super+X)
 * "Web browser" shortcut path is (Categories>Launchers>Launch web browser). And setting (Super+E)
