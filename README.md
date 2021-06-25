@@ -4,9 +4,10 @@ This is my personal Linux Mint setting.
 ### Install from Software Manager
 * Terminator
 * VLC
-* Kolourpaint         
+* Kolourpaint
+
 ### Create shortcuts
-##### First go to Setting.
+##### 1. First go to Setting.
 * "Maximize Windows" setting path is (Categories>Windows>Maximize windows). And setting (Super+Up)
 * "Close Windows" add setting is (Categories>Windows>Close windows). And setting (Super+X)
 * "Web browser" shortcut path is (Categories>Launchers>Launch web browser). And setting (Super+E)
@@ -14,12 +15,12 @@ This is my personal Linux Mint setting.
 * "Terminator" shortcut path is (Categories>Launchers>Custom Shortcuts). After click (Add custom shortcut), set (Name) and (Command) as a "terminator" and setting shortcut (Super+T)
 
 ### Register auto-run commands at boot time
-#### Path & File name
+#### 1. Path & File name
 ```swift
 sudo nvim /etc/profile.d/startup.sh
 ```
 
-#### Scirtp
+#### 2. Scirtp
 ```swift
 #!/bin/bash
 
@@ -96,7 +97,7 @@ sudo apt-get install cheese
 ```
 
 ### Install "VirtualBox"
-download in "www.virtualbox.org/wiki/Linux_Downloads"
+Download url is "www.virtualbox.org/wiki/Linux_Downloads"
 
 ### Install "NeoVim"
 ```swift
