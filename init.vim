@@ -161,6 +161,6 @@ map <F9> :! gcc % -o %<<CR>
 map <F10> :! ./%<<CR>
 
 "----- Emmet 자동완성 단축키 -----
-let g:user_emmet_leader_key=','
+"let g:user_emmet_leader_key=','
 
 "이거 복사 붙여넣기 끝난 뒤에는 nvim에서 PlugInstall 하고 UpdateRemotePlugins 입력하기(플러그인 삭제는 PlugClean) 
