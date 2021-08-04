@@ -47,8 +47,6 @@ rfkill block bluetooth &
 fcitx &
 ```
 
-
-
 ### Numlock 활성화
 ```swift
 sudo apt-get install numlockx
@@ -91,6 +89,14 @@ sudo add-apt-repository -y ppa:linrunner/tlp
 sudo apt-get install -y tlp tlp-rdw
 sudo tlp start
 ```
+
+###Slimbook Battery 설치
+```swift
+sudo add-apt-repository ppa:slimbook/slimbook
+sudo apt update
+sudo apt install slimbookbattery
+```
+그 후 (아마) slimbookbattery 폴더를 ~/.config/slimbookbattery 에 덮어 씌우면 될 것이다.
 
 ### axel 설치
 ```swift
