@@ -1,0 +1,23 @@
+[global_config]
+  enabled_plugins = ActivityWatch, LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler
+  title_use_system_font = False
+  title_font = Ubuntu 10
+[keybindings]
+[profiles]
+  [[default]]
+    audible_bell = True
+    background_darkness = 0.95
+    background_type = transparent
+    cursor_color = "#aaaaaa"
+    font = Monospace 21
+    use_system_font = False
+[layouts]
+  [[default]]
+    [[[window0]]]
+      type = Window
+      parent = ""
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+      profile = New Profile
+[plugins]
