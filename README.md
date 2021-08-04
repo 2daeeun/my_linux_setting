@@ -5,6 +5,11 @@ This is my personal Linux Mint setting.
 * Terminator
 * VLC
 * Kolourpaint
+```swift
+sudo apt-get install vlc
+sudo apt-get install terminator
+sudo apt-get install kolourpaint
+```
   
 ### Create shortcuts
 ```swift
