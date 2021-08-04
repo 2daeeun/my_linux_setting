@@ -15,10 +15,13 @@ sudo apt-get install kolourpaint
 sudo apt install snap snapd
 sudo snap install vlc
 ```
+터미네이터 설정  
+~/.config/terminator  
+위치에 가서 config파일을 덮어 씌운다  
   
-### 단축키 만들기
+### 단축키 만들기(민트 한정)
 ```swift
-설정에서  (Keyboard> Shortcuts)를 들어간다.
+설정에서 (Keyboard> Shortcuts)를 들어간다.
 •창 최대화 단축키는 (Categories>Windows>Maximize windows)에서 (Super+Up)으로 설정한다.
 •창 닫기 단축키 추가는(Categories>Windows>Close windows)에서 (Super+X)로 설정한다.
 •웹 브라우저 단축키는 (Categories>Launchers>Launch web browser)에서 (Super+E)로 설정한다.
@@ -43,6 +46,8 @@ rfkill block bluetooth &
 #enable_hangul_to_fcitx(fcitx를_이용해서_한글_활성화)
 fcitx &
 ```
+
+
 
 ### Numlock 활성화
 ```swift
