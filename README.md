@@ -1,7 +1,7 @@
 # My Linux Mint Setting
 This is my personal Linux Mint setting.  
 
-### Install from Software Manager
+### 설치 해야 할 프로그램
 * Terminator
 * VLC
 * Kolourpaint
