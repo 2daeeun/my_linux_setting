@@ -197,3 +197,8 @@ sudo rm -r ~/fonts/
 ```swift
 sudo apt-get update && sudo apt-get upgrade - && sudo apt autoremove -y && sudo apt autoclean -y
 ```
+### PPA지원, TLP, Slimbook Battery, Vlc, Terminator, Kolourpaint, Numlock 활성화, git, axel, stdio.h 해더파일, 나눔폰트, 카메라, 크롬, 파이어폭스 삭제 원 샷 원 킬
+neovim, oh-my-zsh 는 알아서 하기
+```swift
+sudo apt-get -y install software-properties-common && sudo add-apt-repository -y ppa:linrunner/tlp && sudo add-apt-repository ppa:slimbook/slimbook && sudo apt update && sudo apt-get install -y tlp tlp-rdw && sudo tlp start && sudo apt-get -y install slimbookbattery && sudo apt-get -y install vlc && sudo apt-get -y install terminator && sudo apt-get -y install kolourpaint && sudo apt-get -y install numlockx && sudo apt-get install -y git && sudo apt-get install axel && sudo apt-get install libc6-dev && sudo apt-get install fonts-nanum && sudo apt-get install cheese && wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - && sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list' && sudo apt-get update && sudo apt-get install google-chrome-stable && sudo apt install python3-apt & sudo rm -rf /etc/apt/sources.list.d/google.list && sudo apt-get --purge remove firefox && sudo apt autoremove -y && sudo apt autoclean -y
+```
