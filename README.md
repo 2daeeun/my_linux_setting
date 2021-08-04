@@ -2,28 +2,37 @@
 This is my personal Linux Mint setting.  
 
 ### 설치 해야 할 프로그램
+* Vlc
 * Terminator
-* VLC
 * Kolourpaint
 ```swift
 sudo apt-get install vlc
 sudo apt-get install terminator
 sudo apt-get install kolourpaint
 ```
-  
-### Create shortcuts
+만약 Vlc 설치가 잘 안될 경우
 ```swift
-First go to (Setting>Keyboard) then...
-
-* "Maximize Windows" setting path is (Categories>Windows>Maximize windows). And setting (Super+Up)
-* "Close Windows" add setting is (Categories>Windows>Close windows). And setting (Super+X)
-* "Web browser" shortcut path is (Categories>Launchers>Launch web browser). And setting (Super+E)
-* "Home folder" shortcut path is (Categories>Launchers>Home folder). And setting (Super + F)
-* "Terminator" shortcut path is (Categories>Launchers>Custom Shortcuts). After click (Add custom shortcut), set (Name) and (Command) as a "terminator" and setting shortcut (Super+T)
+sudo apt install snap snapd
+sudo snap install vlc
+```
+  
+### 단축키 만들기
+```swift
+설정에서  (Keyboard> Shortcuts)를 들어간다.
+•창 최대화 단축키는 (Categories>Windows>Maximize windows)에서 (Super+Up)으로 설정한다.
+•창 닫기 단축키 추가는(Categories>Windows>Close windows)에서 (Super+X)로 설정한다.
+•웹 브라우저 단축키는 (Categories>Launchers>Launch web browser)에서 (Super+E)로 설정한다.
+•홈 폴더 단축키는 (Categories>Launchers>Home folder)에서 (Super + F)로 설정한다,
+•터미네이터 단축키는 (Categories>Launchers>Custom Shortcuts)에서 (Add custom shortcut)를 누른 뒤 Name 하고 Command를 terminator로 하고 단축키는 (Super+T)로 설정한다.
 ```
 
-### Register auto-run commands at boot time
-Go to (/etc/profile.d) then create "startup.sh" file. "startup.sh" script is as follows.
+### 부팅 시 자동실행 명령어 등록
+```swift
+cd /etc/profile.d/ 
+sudo vi startup.sh
+```
+
+그 후 본인이 원하는 명령어 쉘 스크립트를 입력한다.
 ```swift
 #!/bin/bash
 
@@ -35,18 +44,18 @@ rfkill block bluetooth &
 fcitx &
 ```
 
-### Active "Numlock"key
+### Numlock 활성화
 ```swift
 sudo apt-get install numlockx
 ```
-Then go (Login Window -> Settings), set (Activate numlock)
+설치 후 Login Window -> Settings에서 Activate numlock 선택하기
 
-### Install "git"
+### git 설치하기
 ```swift
 apt install git
 ```
 
-### Install "Chrome"
+### 크롬 설치
 ```swift
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
@@ -56,9 +65,9 @@ sudo apt install python3-apt
 sudo rm -rf /etc/apt/sources.list.d/google.list
 ```
 
-### Remove "Firefox"
+### 파이어폭스 삭제
 ```swift
-sudo apt-get purge firefox
+sudo apt-get --purge remove firefox
 rm -r .mozilla/firefox/
 rm -r /etc/firefox/
 rm -r /usr/lib/firefox/
@@ -66,19 +75,19 @@ rm -r /usr/lib/firefox-addons/
 rm -r .mozilla
 ```
 
-### Support "PPA"
+### PPA 지원
 ```swift
 sudo apt-get -y install software-properties-common
 ```
 
-### Install "TLP Laptop battery saver"
+### TLP Laptop battery saver 설치
 ```swift
 sudo add-apt-repository -y ppa:linrunner/tlp
 sudo apt-get install -y tlp tlp-rdw
 sudo tlp start
 ```
 
-### Install "Axel"
+### axel 설치
 ```swift
 sudo apt-get install axel
 ```
