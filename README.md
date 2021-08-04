@@ -90,7 +90,7 @@ sudo apt-get install -y tlp tlp-rdw
 sudo tlp start
 ```
 
-###Slimbook Battery 설치
+### Slimbook Battery 설치
 ```swift
 sudo add-apt-repository ppa:slimbook/slimbook
 sudo apt update
