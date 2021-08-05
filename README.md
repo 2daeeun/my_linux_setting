@@ -186,6 +186,11 @@ cd fonts
 sudo rm -r ~/fonts/
 ```
 ***
+### 그놈 터미널 삭제
+```swift
+sudo apt-get --purge remove gnome-terminal gnome-terminal-data
+```
+***
 ### 최종 마무리
 ```swift
 sudo apt-get update && sudo apt-get upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y
