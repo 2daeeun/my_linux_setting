@@ -54,6 +54,20 @@ cp config ~/.config/terminator/
 sudo cp startup.sh /etc/profile.d/ 
 ```
 ***
+### 아톰 설치
+```swift
+wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
+```
+```swift
+sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
+```
+```swift
+sudo apt-get update
+```
+```swift
+sudo apt-get install atom
+```
+***
 ### 크롬 설치
 ```swift
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
