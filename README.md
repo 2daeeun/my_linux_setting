@@ -1,4 +1,5 @@
 # My Linux Mint Setting
+=============
 This is my personal Linux Mint setting.  
 
 ### 삭제 해야 할 프로그램
