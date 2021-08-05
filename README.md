@@ -19,55 +19,33 @@ sudo apt-get --purge remove celluloid hypnotix pix* drawing onboard* rhythmbox* 
 * Vlc
 * Terminator
 * Kolourpaint
+* Numlock 활성화
+* git
+* PPA 지원
+* axel
+* stdio.h 해더파일
+* 나눔폰트
+* 카메라(cheese)
+* Virtualbox
 ```swift
-sudo apt-get install vlc terminator kolourpaint -y
+sudo apt-get install vlc terminator kolourpaint numlockx git software-properties-common axel libc6-dev fonts-nanum cheese virtualbox
 ```
 만약 Vlc 설치가 잘 안될 경우
 ```swift
 sudo apt install snap snapd
 sudo snap install vlc
 ```
-터미네이터 설정  
-~/.config/terminator  
-위치에 가서 config파일을 덮어 씌운다  
-  
-### 단축키 만들기(민트 한정)
+### 터미네이터 설정 
 ```swift
-설정에서 (Keyboard> Shortcuts)를 들어간다.
-•창 최대화 단축키는 (Categories>Windows>Maximize windows)에서 (Super+Up)으로 설정한다.
-•창 닫기 단축키 추가는(Categories>Windows>Close windows)에서 (Super+X)로 설정한다.
-•웹 브라우저 단축키는 (Categories>Launchers>Launch web browser)에서 (Super+E)로 설정한다.
-•홈 폴더 단축키는 (Categories>Launchers>Home folder)에서 (Super + F)로 설정한다,
-•터미네이터 단축키는 (Categories>Launchers>Custom Shortcuts)에서 (Add custom shortcut)를 누른 뒤 Name 하고 Command를 terminator로 하고 단축키는 (Super+T)로 설정한다.
+git clone https://github.com/largesilver/my_linux_mint_setting.git
+cd my_linux_mint_setting/
+mkdir ~/.config/terminator
+cp config /home/leedaeeun/.config/terminator/
 ```
 
 ### 부팅 시 자동실행 명령어 등록
 ```swift
-cd /etc/profile.d/ 
-sudo vi startup.sh
-```
-
-그 후 본인이 원하는 명령어 쉘 스크립트를 입력한다.
-```swift
-#!/bin/bash
-
-#Thinkpad_trackpoint_speed(빨콩_속도조절)
-xinput --set-prop "TPPS/2 Elan TrackPoint" "libinput Accel Speed" -1.0 &
-#Disable_bluetooth_on_boot(부팅시_블루투스_비활성화)
-rfkill block bluetooth &
-#enable_hangul_to_fcitx(fcitx를_이용해서_한글_활성화)
-fcitx &
-```
-
-### Numlock 활성화
-```swift
-sudo apt-get install numlockx -y
-```
-설치 후 Login Window -> Settings에서 Activate numlock 선택하기
-
-### git 설치하기
-```swift
-sudo apt install git -y
+sudo cp startup.sh /etc/profile.d/ 
 ```
 
 ### 크롬 설치
