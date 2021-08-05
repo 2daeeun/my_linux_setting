@@ -1,6 +1,6 @@
 # My Linux Mint Setting
 This is my personal Linux Mint setting.  
-
+***
 ### 삭제 해야 할 프로그램
 * Celluloid
 * Hypnotix
@@ -14,7 +14,7 @@ This is my personal Linux Mint setting.
 ```swift
 sudo apt-get --purge remove celluloid hypnotix pix* drawing onboard* rhythmbox* hexchat* thunderbird* libreoffice*
 ```
-
+***
 ### 설치 해야 할 프로그램
 * Vlc
 * Terminator
@@ -34,6 +34,7 @@ sudo apt-get install vlc terminator kolourpaint numlockx git software-properties
 ```swift
 sudo apt install snap snapd && sudo snap install vlc
 ```
+***
 ### 터미네이터 설정 
 ```swift
 git clone https://github.com/largesilver/my_linux_mint_setting.git
@@ -47,7 +48,7 @@ mkdir ~/.config/terminator
 ```swift
 cp config ~/.config/terminator/
 ```
-
+***
 ### 부팅 시 자동실행 명령어 등록
 ```swift
 sudo cp startup.sh /etc/profile.d/ 
