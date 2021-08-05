@@ -53,7 +53,7 @@ cp config ~/.config/terminator/
 ```swift
 sudo cp startup.sh /etc/profile.d/ 
 ```
-
+***
 ### 크롬 설치
 ```swift
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
@@ -70,7 +70,7 @@ sudo apt install python3-apt
 ```swift
 sudo rm -rf /etc/apt/sources.list.d/google.list
 ```
-
+***
 ### 파이어폭스 삭제
 ```swift
 sudo apt-get --purge remove firefox*
@@ -79,12 +79,12 @@ sudo rm -r /usr/lib/firefox/
 sudo rm -r /usr/lib/firefox-addons/
 sudo rm -r .mozilla
 ```
-
+***
 ### TLP Laptop battery saver 설치
 ```swift
 sudo apt-get install -y tlp tlp-rdw && sudo tlp start
 ```
-
+***
 ### Slimbook Battery 설치
 ```swift
 sudo add-apt-repository ppa:slimbook/slimbook
@@ -92,7 +92,7 @@ sudo add-apt-repository ppa:slimbook/slimbook
 ```swift
 sudo apt update && sudo apt install slimbookbattery
 ```
-
+***
 ### NeoVim 설치
 ```swift
 sudo apt-get install software-properties-common fuse libfuse2 git python3-pip ack-grep -y
@@ -107,7 +107,7 @@ pip3 install --user neovim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 터미널에서 'v' 만으로 nvim을 실행하고 싶으면 ~/.zshrc 에서 마지막 줄에 alias v='nvim' 를 입력하면 된다.
-
+***
 ### NeoVim 설정 & 플러그인
 우선 colorscheme 부터 설정하자  
 (테마는 onedark이다)  
@@ -135,7 +135,7 @@ cp init.vim ~/.config/nvim/
 우선 init.vim 을 연 뒤에 깃헙의 init.vim을 붙여 넣기 한다.  
 복사 붙여넣기 한 뒤에 nvim에서 PlugInstall 하고 UpdateRemotePlugins 를 입력한다.  
 (nvim이 아닌 일반 vim 사용할 때는 /etc/vim 에 가서 vimrc 파일을 연다.)  
-
+***
 ### zsh 및 oh-my-zsh 설치
 ```swift
 sudo apt-get install zsh
@@ -149,8 +149,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 ```swift
 sudo apt install fonts-powerline
 ```
-
-
+***
 ### oh-my-zsh 테마 변경
 .zshrc 파일을 열은 뒤에 robbyrussell 테마에서 agnoster 테마로 바꾼다.
 ```swift
@@ -159,7 +158,7 @@ vi ~/.zshrc
 ```swift
 ZSH_THEME="robbyrussell"   ==>   ZSH_THEME="agnoster"
 ```
-
+***
 ### zsh 플러그인 설치
 .zshrc 파일을 열고 71번째 줄에 plugins=(git)를 다음과 같이 고친다.
 ```swift
@@ -178,7 +177,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 ```swift
 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
-
+***
 ### oh-my-zsh 폰트 깨짐 방지
 ```swift
 git clone https://github.com/powerline/fonts.git
@@ -186,7 +185,7 @@ cd fonts
 ./install.sh
 sudo rm -r ~/fonts/
 ```
-
+***
 ### 최종 마무리
 ```swift
 sudo apt-get update && sudo apt-get upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y
