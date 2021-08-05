@@ -127,6 +127,9 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.g
 (테마는 onedark이다)  
 (nvim이 아닌 일반 vim의 colorschme 기본 폴더는 /usr/share/vim/vim81/colors 이며 vim81의 숫자는 버전마다 다를 수 있다.)  
 ```swift
+cd ~
+```
+```swift
 git clone https://github.com/joshdick/onedark.vim.git
 ```
 ```swift
@@ -140,6 +143,9 @@ sudo rm -r onedark.vim
 ```
 
 테마 설정 후에는 잡다한 설정 및 플러그인들을 설치 하자
+```swift
+cd my_linux_mint_setting/
+```
 ```swift
 mkdir ~/.config/nvim
 ```
