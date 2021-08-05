@@ -32,14 +32,19 @@ sudo apt-get install vlc terminator kolourpaint numlockx git software-properties
 ```
 만약 Vlc 설치가 잘 안될 경우
 ```swift
-sudo apt install snap snapd
-sudo snap install vlc
+sudo apt install snap snapd && sudo snap install vlc
 ```
 ### 터미네이터 설정 
 ```swift
 git clone https://github.com/largesilver/my_linux_mint_setting.git
+```
+```swift
 cd my_linux_mint_setting/
+```
+```swift
 mkdir ~/.config/terminator
+```
+```swift
 cp config ~/.config/terminator/
 ```
 
@@ -51,10 +56,17 @@ sudo cp startup.sh /etc/profile.d/
 ### 크롬 설치
 ```swift
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+```
+```swift
 sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
-sudo apt-get update
-sudo apt-get install google-chrome-stable
+```
+```swift
+sudo apt-get update && sudo apt-get install google-chrome-stable
+```
+```swift
 sudo apt install python3-apt
+```
+```swift
 sudo rm -rf /etc/apt/sources.list.d/google.list
 ```
 
@@ -69,22 +81,21 @@ sudo rm -r .mozilla
 
 ### TLP Laptop battery saver 설치
 ```swift
-sudo apt-get install -y tlp tlp-rdw
-sudo tlp start
+sudo apt-get install -y tlp tlp-rdw && sudo tlp start
 ```
 
 ### Slimbook Battery 설치
 ```swift
 sudo add-apt-repository ppa:slimbook/slimbook
-sudo apt update
-sudo apt install slimbookbattery
+```
+```swift
+sudo apt update && sudo apt install slimbookbattery
 ```
 
 ### NeoVim 설치
 ```swift
 sudo apt-get install software-properties-common fuse libfuse2 git python3-pip ack-grep -y
 ```
-
 ```swift
 sudo apt-get update && sudo apt-get install neovim
 ```
@@ -92,13 +103,6 @@ sudo apt-get update && sudo apt-get install neovim
 pip3 install --user neovim
 ```
 ```swift
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
-
-```swift
-sudo apt-get install software-properties-common fuse libfuse2 git python3-pip ack-grep -y
-sudo apt-get update && sudo apt-get install neovim
-pip3 install --user neovim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 터미널에서 'v' 만으로 nvim을 실행하고 싶으면 ~/.zshrc 에서 마지막 줄에 alias v='nvim' 를 입력하면 된다.
@@ -109,29 +113,48 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.g
 (nvim이 아닌 일반 vim의 colorschme 기본 폴더는 /usr/share/vim/vim81/colors 이며 vim81의 숫자는 버전마다 다를 수 있다.)  
 ```swift
 git clone https://github.com/joshdick/onedark.vim.git
+```
+```swift
 sudo cp ~/onedark.vim/colors/onedark.vim /usr/share/nvim/runtime/colors/
+```
+```swift
 sudo cp ~/onedark.vim/autoload/onedark.vim /usr/share/nvim/runtime/autoload/
+```
+```swift
 sudo rm -r onedark.vim
 ```
+
 테마 설정 후에는 잡다한 설정 및 플러그인들을 설치 하자
 ```swift
 mkdir ~/.config/nvim
+```
+```swift
 cp init.vim ~/.config/nvim/
 ```
-우선 init.vim 을 연 뒤에 깃헙의 init.vim을 붙여 넣기 한다.
-복사 붙여넣기 한 뒤에 nvim에서 PlugInstall 하고 UpdateRemotePlugins 를 입력한다.
-(nvim이 아닌 일반 vim 사용할 때는 /etc/vim 에 가서 vimrc 파일을 연다.)
+우선 init.vim 을 연 뒤에 깃헙의 init.vim을 붙여 넣기 한다.  
+복사 붙여넣기 한 뒤에 nvim에서 PlugInstall 하고 UpdateRemotePlugins 를 입력한다.  
+(nvim이 아닌 일반 vim 사용할 때는 /etc/vim 에 가서 vimrc 파일을 연다.)  
 
 ### zsh 및 oh-my-zsh 설치
 ```swift
 sudo apt-get install zsh
+```
+```swift
 chsh -s /usr/bin/zsh
+```
+```swift
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+```swift
 sudo apt install fonts-powerline
 ```
 
+
 ### oh-my-zsh 테마 변경
 .zshrc 파일을 열은 뒤에 robbyrussell 테마에서 agnoster 테마로 바꾼다.
+```swift
+vi ~/.zshrc
+```
 ```swift
 ZSH_THEME="robbyrussell"   ==>   ZSH_THEME="agnoster"
 ```
@@ -145,12 +168,13 @@ plugins=(
     zsh-autosuggestions 
 )
 ```
-그 후 다음과 같이 플러그인을 다운로드하고 설정한다.
+그 후 다음과 같이 플러그인을 다운로드하고 설정한다.  
+##### zsh-syntax-highlighting
 ```swift
-# zsh-syntax-highlighting
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-
-# zsh-autosuggestions
+```
+##### zsh-autosuggestions
+```swift
 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
 
