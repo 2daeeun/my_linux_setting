@@ -12,15 +12,7 @@ This is my personal Linux Mint setting.
 * Thunderbird
 * Libreoffice
 ```swift
-sudo apt-get --purge remove celluloid
-sudo apt-get --purge remove hypnotix
-sudo apt-get --purge remove pix*
-sudo apt-get --purge remove drawing
-sudo apt-get --purge remove onboard*
-sudo apt-get --purge remove rhythmbox*
-sudo apt-get --purge remove hexchat*
-sudo apt-get --purge remove thunderbird*
-sudo apt-get --purge remove libreoffice*
+sudo apt-get --purge remove celluloid hypnotix pix* drawing onboard* rhythmbox* hexchat* thunderbird* libreoffice*
 ```
 
 ### 설치 해야 할 프로그램
