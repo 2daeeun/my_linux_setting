@@ -40,7 +40,7 @@ sudo snap install vlc
 git clone https://github.com/largesilver/my_linux_mint_setting.git
 cd my_linux_mint_setting/
 mkdir ~/.config/terminator
-cp config /home/leedaeeun/.config/terminator/
+cp config ~/.config/terminator/
 ```
 
 ### 부팅 시 자동실행 명령어 등록
@@ -95,9 +95,9 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.g
 터미널에서 'v' 만으로 nvim을 실행하고 싶으면 ~/.zshrc 에서 마지막 줄에 alias v='nvim' 를 입력하면 된다.
 
 ### NeoVim 설정 & 플러그인
-우선 colorscheme 부터 설정하자
-(테마는 onedark이다)
-(nvim이 아닌 일반 vim의 colorschme 기본 폴더는 /usr/share/vim/vim81/colors 이며 vim81의 숫자는 버전마다 다를 수 있다.)
+우선 colorscheme 부터 설정하자  
+(테마는 onedark이다)  
+(nvim이 아닌 일반 vim의 colorschme 기본 폴더는 /usr/share/vim/vim81/colors 이며 vim81의 숫자는 버전마다 다를 수 있다.)  
 ```swift
 git clone https://github.com/joshdick/onedark.vim.git
 sudo cp ~/onedark.vim/colors/onedark.vim /usr/share/nvim/runtime/colors/
@@ -107,7 +107,7 @@ sudo rm -r onedark.vim
 테마 설정 후에는 잡다한 설정 및 플러그인들을 설치 하자
 ```swift
 mkdir ~/.config/nvim
-vi .config/nvim/init.vim
+cp init.vim ~/.config/nvim/
 ```
 우선 init.vim 을 연 뒤에 깃헙의 init.vim을 붙여 넣기 한다.
 복사 붙여넣기 한 뒤에 nvim에서 PlugInstall 하고 UpdateRemotePlugins 를 입력한다.
