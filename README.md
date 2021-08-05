@@ -67,11 +67,6 @@ rm -r /usr/lib/firefox-addons/
 rm -r .mozilla
 ```
 
-### PPA 지원
-```swift
-sudo apt-get -y install software-properties-common
-```
-
 ### TLP Laptop battery saver 설치
 ```swift
 sudo add-apt-repository -y ppa:linrunner/tlp
@@ -86,32 +81,6 @@ sudo apt update
 sudo apt install slimbookbattery
 ```
 그 후 (아마) slimbookbattery 폴더를 ~/.config/slimbookbattery 에 덮어 씌우면 될 것이다.
-
-### axel 설치
-```swift
-sudo apt-get install axel
-```
-axel 사용방법 예시는 axel -n x http://~~ .mp4
-
-### stdio.h 해더파일 설치
-```swift
-sudo apt-get install libc6-dev
-```
-
-### 나눔폰트 설치
-```swift
-sudo apt-get install fonts-nanum
-```
-
-### 카메라 설치
-```swift
-sudo apt-get install cheese
-```
-
-### VirtualBox 설치
-```swift
-sudo apt-get install virtualbox
-```
 
 ### NeoVim 설치
 ```swift
@@ -186,10 +155,5 @@ sudo rm -r ~/fonts/
 
 ### 최종 마무리
 ```swift
-sudo apt-get update && sudo apt-get upgrade - && sudo apt autoremove -y && sudo apt autoclean -y
-```
-### PPA지원, TLP, Slimbook Battery, Vlc, Terminator, Kolourpaint, Numlock 활성화, git, axel, stdio.h 해더파일, 나눔폰트, 카메라, 크롬, 파이어폭스 삭제 원 샷 원 킬
-neovim, oh-my-zsh 는 알아서 하기
-```swift
-sudo apt-get -y install software-properties-common && sudo add-apt-repository -y ppa:linrunner/tlp && sudo add-apt-repository ppa:slimbook/slimbook && sudo apt update && sudo apt-get install -y tlp tlp-rdw && sudo tlp start && sudo apt-get -y install slimbookbattery && sudo apt-get -y install vlc && sudo apt-get -y install terminator && sudo apt-get -y install kolourpaint && sudo apt-get -y install numlockx && sudo apt-get install -y git && sudo apt-get install axel && sudo apt-get install libc6-dev && sudo apt-get install fonts-nanum && sudo apt-get install cheese && wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - && sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list' && sudo apt-get update && sudo apt-get install google-chrome-stable && sudo apt install python3-apt & sudo rm -rf /etc/apt/sources.list.d/google.list && sudo apt-get --purge remove firefox && sudo apt autoremove -y && sudo apt autoclean -y
+sudo apt-get update && sudo apt-get upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y
 ```
