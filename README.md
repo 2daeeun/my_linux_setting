@@ -20,9 +20,7 @@ sudo apt-get --purge remove celluloid hypnotix pix* drawing onboard* rhythmbox* 
 * Terminator
 * Kolourpaint
 ```swift
-sudo apt-get install vlc -y
-sudo apt-get install terminator -y 
-sudo apt-get install kolourpaint -y
+sudo apt-get install vlc terminator kolourpaint -y
 ```
 만약 Vlc 설치가 잘 안될 경우
 ```swift
