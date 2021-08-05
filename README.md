@@ -1,6 +1,28 @@
 # My Linux Mint Setting
 This is my personal Linux Mint setting.  
 
+### 삭제 해야 할 프로그램
+* Celluloid
+* Hypnotix
+* Pix
+* Drawing
+* Onboard
+* Rhythmbox
+* Hexchat
+* Thunderbird
+* Libreoffice
+```swift
+sudo apt-get --purge remove celluloid
+sudo apt-get --purge remove hypnotix
+sudo apt-get --purge remove pix*
+sudo apt-get --purge remove drawing
+sudo apt-get --purge remove onboard*
+sudo apt-get --purge remove rhythmbox*
+sudo apt-get --purge remove hexchat*
+sudo apt-get --purge remove thunderbird*
+sudo apt-get --purge remove libreoffice*
+```
+
 ### 설치 해야 할 프로그램
 * Vlc
 * Terminator
@@ -70,8 +92,7 @@ sudo rm -rf /etc/apt/sources.list.d/google.list
 
 ### 파이어폭스 삭제
 ```swift
-sudo apt-get --purge remove firefox
-rm -r .mozilla/firefox/
+sudo apt-get --purge remove firefox*
 rm -r /etc/firefox/
 rm -r /usr/lib/firefox/
 rm -r /usr/lib/firefox-addons/
