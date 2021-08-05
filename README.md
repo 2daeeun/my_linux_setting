@@ -195,8 +195,14 @@ git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh
 ### oh-my-zsh 폰트 깨짐 방지
 ```swift
 git clone https://github.com/powerline/fonts.git
+```
+```swift
 cd fonts
+```
+```swift
 ./install.sh
+```
+```swift
 sudo rm -r ~/fonts/
 ```
 ***
