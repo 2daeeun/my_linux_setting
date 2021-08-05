@@ -19,7 +19,7 @@ sudo apt-get --purge remove celluloid hypnotix pix* drawing onboard* rhythmbox* 
 * Vlc
 * Terminator
 * Kolourpaint
-* Numlock 활성화
+* Numlock 활성화(설치 후 Login Window -> Settings에서 Activate numlock 선택하기)
 * git
 * PPA 지원
 * axel
