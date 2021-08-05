@@ -61,15 +61,14 @@ sudo rm -rf /etc/apt/sources.list.d/google.list
 ### 파이어폭스 삭제
 ```swift
 sudo apt-get --purge remove firefox*
-rm -r /etc/firefox/
-rm -r /usr/lib/firefox/
-rm -r /usr/lib/firefox-addons/
-rm -r .mozilla
+sudo rm -r /etc/firefox/
+sudo rm -r /usr/lib/firefox/
+sudo rm -r /usr/lib/firefox-addons/
+sudo rm -r .mozilla
 ```
 
 ### TLP Laptop battery saver 설치
 ```swift
-sudo add-apt-repository -y ppa:linrunner/tlp
 sudo apt-get install -y tlp tlp-rdw
 sudo tlp start
 ```
@@ -80,15 +79,25 @@ sudo add-apt-repository ppa:slimbook/slimbook
 sudo apt update
 sudo apt install slimbookbattery
 ```
-그 후 (아마) slimbookbattery 폴더를 ~/.config/slimbookbattery 에 덮어 씌우면 될 것이다.
 
 ### NeoVim 설치
 ```swift
-sudo apt-get install software-properties-common
-sudo apt-get install fuse libfuse2 git python3-pip ack-grep -y
-sudo add-apt-repository ppa:neovim-ppa/unstable
-sudo apt-get update
-sudo apt-get install neovim
+sudo apt-get install software-properties-common fuse libfuse2 git python3-pip ack-grep -y
+```
+
+```swift
+sudo apt-get update && sudo apt-get install neovim
+```
+```swift
+pip3 install --user neovim
+```
+```swift
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+```
+
+```swift
+sudo apt-get install software-properties-common fuse libfuse2 git python3-pip ack-grep -y
+sudo apt-get update && sudo apt-get install neovim
 pip3 install --user neovim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
