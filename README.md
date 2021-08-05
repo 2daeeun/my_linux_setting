@@ -6,9 +6,9 @@ This is my personal Linux Mint setting.
 * Terminator
 * Kolourpaint
 ```swift
-sudo apt-get install vlc
-sudo apt-get install terminator
-sudo apt-get install kolourpaint
+sudo apt-get install vlc -y
+sudo apt-get install terminator -y 
+sudo apt-get install kolourpaint -y
 ```
 만약 Vlc 설치가 잘 안될 경우
 ```swift
@@ -49,13 +49,13 @@ fcitx &
 
 ### Numlock 활성화
 ```swift
-sudo apt-get install numlockx
+sudo apt-get install numlockx -y
 ```
 설치 후 Login Window -> Settings에서 Activate numlock 선택하기
 
 ### git 설치하기
 ```swift
-apt install git
+sudo apt install git -y
 ```
 
 ### 크롬 설치
@@ -120,7 +120,9 @@ sudo apt-get install cheese
 ```
 
 ### VirtualBox 설치
-Download url is "www.virtualbox.org/wiki/Linux_Downloads"
+```swift
+sudo apt-get install virtualbox
+```
 
 ### NeoVim 설치
 ```swift
