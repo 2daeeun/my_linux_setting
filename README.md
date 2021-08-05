@@ -1,5 +1,4 @@
 # My Linux Mint Setting
-***
 This is my personal Linux Mint setting.  
 
 ### 삭제 해야 할 프로그램
@@ -170,11 +169,11 @@ plugins=(
 )
 ```
 그 후 다음과 같이 플러그인을 다운로드하고 설정한다.  
-##### zsh-syntax-highlighting
+**zsh-syntax-highlighting**
 ```swift
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
-##### zsh-autosuggestions
+**zsh-autosuggestions** 
 ```swift
 git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
