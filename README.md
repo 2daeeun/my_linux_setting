@@ -1,6 +1,10 @@
 # My Linux Mint Setting
 This is my personal Linux Mint setting.  
 ***
+### 애플릿에서 설정 해야 할 것
+* CPU Temperature Indicator
+* System Monitor
+***
 ### 삭제 해야 할 프로그램
 * Celluloid
 * Hypnotix
