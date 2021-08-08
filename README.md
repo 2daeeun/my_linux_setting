@@ -104,10 +104,9 @@ sudo rm -rf /etc/apt/sources.list.d/google.list
 ### 파이어폭스 삭제
 ```swift
 sudo apt-get --purge remove firefox*
-sudo rm -r /etc/firefox/
-sudo rm -r /usr/lib/firefox/
-sudo rm -r /usr/lib/firefox-addons/
-sudo rm -r .mozilla
+```
+```swift
+sudo rm -r /etc/firefox/ /usr/lib/firefox/ /usr/lib/firefox-addons/ /home/leedaeeun/.mozilla
 ```
 ***
 ### TLP Laptop battery saver 설치
