@@ -1,5 +1,45 @@
 # My Linux Mint Setting
-This is my personal Linux Mint setting.  
+This is my personal Linux Mint setting. 
+***
+### 기본 단축키
+**일반**
+|단축키|설정값|
+|--------------------|------------------------|
+|창 선택 화면 보기|Ctrl+Alt+아래 화살표|
+|작업 공간 선택 화면 보기|Ctrl+Alt+위 화살표, Alt+F1|
+|바탕화면 보기|Super+D|
+|데스크릿 보기|Super+S|
+|열린 창들 둘러보기|Alt+Tab|
+|명령어 창 실행|Alt+F2|
+
+**일반 > 문제 해결하기**
+|단축키|설정값|
+|--------------------|------------------------|
+|루킹글래스 표시|Super+L|
+
+**창**
+|단축키|설정값|
+|--------------------|------------------------|
+|창 최대화 취소|Alt+F5|
+|창 닫기|Alt+F4|
+|사용 중인 창의 메뉴 보기|Space|
+|창 최대화 토글|Alt+F10|
+
+**창 > 위치**
+|단축키|설정값|
+|---|---|
+| 창 크기 조절 | Alt+F8 |
+| 창 이동 | Alt+F7 |
+
+***
+### 단축키 설정
+설정에서  (키보드 > 단축키)를 들어간다.
+* 루킹글래스 단축키 바꾸기 (일반 > 문제 해결하기 > 루킹글래스 표시)에서 (Super+L > Alt+Super+L)로 설정
+•창 최대화 단축키는 (Categories>Windows>Maximize windows)에서 (Super+Up)으로 설정한다.
+•창 닫기 단축키 추가는(Categories>Windows>Close windows)에서 (Super+X)로 설정한다.
+•웹 브라우저 단축키는 (Categories>Launchers>Launch web browser)에서 (Super+E)로 설정한다.
+•홈 폴더 단축키는 (Categories>Launchers>Home folder)에서 (Super + F)로 설정한다,
+•터미네이터 단축키는 (Categories>Launchers>Custom Shortcuts)에서 (Add custom shortcut)를 누른 뒤 Name 하고 Command를 terminator로 하고 단축키는 (Super+T)로 설정한다.
 ***
 ### 애플릿에서 설정 해야 할 것
 * CPU Temperature Indicator
