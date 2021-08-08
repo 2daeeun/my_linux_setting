@@ -42,7 +42,7 @@ sudo apt-get --purge remove celluloid hypnotix pix* drawing onboard* rhythmbox* 
 * 나눔폰트
 * 카메라(cheese)
 * Virtualbox
-* Parcellite(클립보드)
+* Parcellite(클립보드)(단축키는 Ctrl+Alt+H)
 ```swift
 sudo apt-get install vlc terminator kolourpaint numlockx git software-properties-common axel libc6-dev fonts-nanum cheese virtualbox parcellite
 ```
