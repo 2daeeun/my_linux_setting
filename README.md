@@ -44,8 +44,9 @@ sudo apt-get --purge remove celluloid hypnotix pix* drawing onboard* rhythmbox* 
 * 카메라(cheese)
 * Virtualbox
 * Parcellite(클립보드)(단축키는 Ctrl+Alt+H)
+* barrier
 ```swift
-sudo apt-get install vlc terminator kolourpaint numlockx git software-properties-common axel libc6-dev fonts-nanum cheese virtualbox parcellite
+sudo apt-get install vlc terminator kolourpaint numlockx git software-properties-common axel libc6-dev fonts-nanum cheese virtualbox parcellite barrier
 ```
 만약 Vlc 설치가 잘 안될 경우
 ```swift
