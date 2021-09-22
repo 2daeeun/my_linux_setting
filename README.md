@@ -154,7 +154,7 @@ mkdir ~/.config/nvim
 ```swift
 cp ~/my_linux_mint_setting/init.vim ~/.config/nvim/
 ```
-PlugInstall 하고 UpdateRemotePlugins 를 입력한다.  
+**:PlugInstall** 하고 **:UpdateRemotePlugins** 를 입력한다.  
 (nvim이 아닌 일반 vim 사용할 때는 /etc/vim 에 가서 vimrc 파일을 수정한다.)  
 ***
 ### LSP 설정하기
@@ -165,7 +165,7 @@ sudo apt-get install clangd-12
 ```swift
 sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-12 100
 ```
-다음에 clangd를 위에처럼 사용하지 않고, nvim에서 **:CocCommand clangd.install** 을 입력하여 설치를 진행하고 **:CocCommand clangd.update** 명령어를 입력해서 실제 실행되는지 확인해 보기. 안되면 그냥 위의 방법처럼 하고
+다음에 clangd를 위에처럼 사용하지 않고, nvim에서 **:CocCommand clangd.install** 을 입력하여 설치를 진행하고 **:CocCommand clangd.update** 명령어를 입력해서 실제 실행되는지 확인해 보기. 안되면 그냥 위의 방법처럼 하고  
 **[coc-jedi](https://github.com/pappasam/coc-jedi "coc-jedi") 설정(파이썬 자동완성)**
 ```swift
 cp ~/my_linux_mint_setting/coc-settings.json ~/.config/nvim/
@@ -179,8 +179,8 @@ nvim에서 **:CocInstall <LSP 서버명>** 을 이용해서 위의 명렁어를 
 CoC와 LSP 전반적으로 참조 사이트  
 [Chris@Machine ~Neovim Intellisense with coc](https://www.chrisatmachine.com/Neovim/04-vim-coc/)  
 [coc.nvim](https://github.com/neoclide/coc.nvim)  
-[coc-extnsions](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions)  
-[기계인간 ~coc.nvim 설치](https://johngrib.github.io/wiki/vim-auto-completion/)                                    <-원하는 LSP서버는 주로 여기서 참조하기 
+[coc-extnsions](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions)  **<-원하는 LSP서버는 주로 여기를 참조하자**  
+[기계인간 ~coc.nvim 설치](https://johngrib.github.io/wiki/vim-auto-completion/)  
 ***
 ### zsh 및 oh-my-zsh 설치
 ```swift
