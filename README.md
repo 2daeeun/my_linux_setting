@@ -53,6 +53,13 @@ sudo apt-get install vlc terminator kolourpaint numlockx git software-properties
 sudo apt install snap snapd && sudo snap install vlc
 ```
 ***
+### Nerd Fonts 설치
+```swift
+sudo wget -P /usr/share/fonts https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
+```
+```swift
+sudo fc-cache -f -v
+***
 ### 터미네이터 설정 
 ```swift
 git clone https://github.com/largesilver/my_linux_mint_setting.git
@@ -171,6 +178,7 @@ cp ~/my_linux_mint_setting/coc-settings.json ~/.config/nvim/
 ```swift
 CocInstall coc-clangd coc-python coc-jedi coc-sh coc-vimlsp
 ```
+nvim에서 ConInstall 을 이용해서 위의 명렁어를 입력한다.
 
 전반적인 참조 사이트  
 https://www.chrisatmachine.com/Neovim/04-vim-coc/  
