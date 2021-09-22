@@ -162,7 +162,7 @@ PlugInstall 하고 UpdateRemotePlugins 를 입력한다.
 (nvim이 아닌 일반 vim 사용할 때는 /etc/vim 에 가서 vimrc 파일을 수정한다.)  
 ***
 ### CoC 설정하기
-**clangd 설치하기(c/c++ 자동완성)**
+**[clangd](https://clangd.llvm.org/installation.html "clangd") 설치하기(c/c++ 자동완성)**
 ```swift
 sudo apt-get install clangd-12
 ```
