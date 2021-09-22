@@ -131,19 +131,13 @@ sudo apt-get install curl
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 ```
 ```swift
-sudo apt-get install -y nodejs
-```
-```swift
-sudo apt-get install build-essential
+sudo apt-get install -y nodejs && sudo apt-get install build-essential
 ```
 PPA를 통해서 Node.JS를 설치하면 NodeJS 뿐만 아니라 npm도 같이 설치되는데, npm install시 에러가 나는 것을 방지하기 위해 build-essential을 설치해준다.
 ***
 ### NeoVim 설치
 ```swift
-sudo apt-get install software-properties-common fuse libfuse2 git python3-pip ack-grep -y
-```
-```swift
-sudo apt-get update && sudo apt-get install neovim
+sudo apt-get install software-properties-common fuse libfuse2 git python3-pip ack-grep -y && sudo apt-get update && sudo apt-get install neovim
 ```
 ```swift
 pip3 install --user neovim
@@ -163,7 +157,7 @@ cp ~/my_linux_mint_setting/init.vim ~/.config/nvim/
 PlugInstall 하고 UpdateRemotePlugins 를 입력한다.  
 (nvim이 아닌 일반 vim 사용할 때는 /etc/vim 에 가서 vimrc 파일을 수정한다.)  
 ***
-### CoC 설정하기
+### LSP 설정하기
 **[clangd](https://clangd.llvm.org/installation.html "clangd") 설치하기(c/c++ 자동완성)**
 ```swift
 sudo apt-get install clangd-12
@@ -171,17 +165,22 @@ sudo apt-get install clangd-12
 ```swift
 sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-12 100
 ```
+다음에 clangd를 위에처럼 사용하지 않고, nvim에서 **:CocCommand clangd.install** 을 입력하여 설치를 진행하고 **:CocCommand clangd.update** 명령어를 입력해서 실제 실행되는지 확인해 보기. 안되면 그냥 위의 방법처럼 하고
 **[coc-jedi](https://github.com/pappasam/coc-jedi "coc-jedi") 설정(파이썬 자동완성)**
 ```swift
 cp ~/my_linux_mint_setting/coc-settings.json ~/.config/nvim/
 ```
-**CoC 적용하기**
+**LSP 등록하기**
 ```swift
 CocInstall coc-clangd coc-python coc-jedi coc-sh coc-vimlsp
 ```
-nvim에서 ConInstall 을 이용해서 위의 명렁어를 입력한다.
+nvim에서 **:CocInstall <LSP 서버명>** 을 이용해서 위의 명렁어를 입력한다.
 
-전반적인 참조 사이트  
+CoC와 LSP 전반적으로 참조 사이트
+[Chris@Machine ~Neovim Intellisense with coc](https://www.chrisatmachine.com/Neovim/04-vim-coc/)  
+[coc.nvim](https://github.com/neoclide/coc.nvim)  
+[coc-extnsions](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions)  
+[기계인간 ~coc.nvim 설치~](https://johngrib.github.io/wiki/vim-auto-completion/)  
 https://www.chrisatmachine.com/Neovim/04-vim-coc/  
 https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions              <- 원하는 coc 있을 때는 여기 주로 참조하기  
 https://johngrib.github.io/wiki/vim-auto-completion/  
