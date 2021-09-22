@@ -58,13 +58,10 @@ sudo apt install snap snapd && sudo snap install vlc
 git clone https://github.com/largesilver/my_linux_mint_setting.git
 ```
 ```swift
-cd my_linux_mint_setting/
-```
-```swift
 mkdir ~/.config/terminator
 ```
 ```swift
-cp config ~/.config/terminator/
+cp ~/my_linux_mint_setting/config ~/.config/terminator/
 ```
 ***
 ### 부팅 시 자동실행 명령어 등록
@@ -124,6 +121,21 @@ sudo add-apt-repository ppa:slimbook/slimbook
 sudo apt update && sudo apt install slimbookbattery
 ```
 ***
+### Node.Js 설치
+```swift
+sudo apt-get install curl
+```
+```swift
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+```
+```swift
+sudo apt-get install -y nodejs
+```
+```swift
+sudo apt-get install build-essential
+```
+PPA를 통해서 Node.JS를 설치하면 NodeJS 뿐만 아니라 npm도 같이 설치되는데, npm install시 에러가 나는 것을 방지하기 위해 build-essential을 설치해준다.
+***
 ### NeoVim 설치
 ```swift
 sudo apt-get install software-properties-common fuse libfuse2 git python3-pip ack-grep -y
@@ -139,39 +151,37 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.g
 ```
 터미널에서 'v' 만으로 nvim을 실행하고 싶으면 ~/.zshrc 에서 마지막 줄에 alias v='nvim' 를 입력하면 된다.
 ***
-### NeoVim 설정 & 플러그인
-우선 colorscheme 부터 설정하자  
-(테마는 onedark이다)  
-(nvim이 아닌 일반 vim의 colorschme 기본 폴더는 /usr/share/vim/vim81/colors 이며 vim81의 숫자는 버전마다 다를 수 있다.)  
-```swift
-cd ~
-```
-```swift
-git clone https://github.com/joshdick/onedark.vim.git
-```
-```swift
-sudo cp ~/onedark.vim/colors/onedark.vim /usr/share/nvim/runtime/colors/
-```
-```swift
-sudo cp ~/onedark.vim/autoload/onedark.vim /usr/share/nvim/runtime/autoload/
-```
-```swift
-sudo rm -r onedark.vim
-```
-
-테마 설정 후에는 잡다한 설정 및 플러그인들을 설치 하자
-```swift
-cd my_linux_mint_setting/
-```
+### NeoVim 설정
 ```swift
 mkdir ~/.config/nvim
 ```
 ```swift
-cp init.vim ~/.config/nvim/
+cp ~/my_linux_mint_setting/init.vim ~/.config/nvim/
 ```
-우선 init.vim 을 연 뒤에 깃헙의 init.vim을 붙여 넣기 한다.  
-복사 붙여넣기 한 뒤에 nvim에서 PlugInstall 하고 UpdateRemotePlugins 를 입력한다.  
-(nvim이 아닌 일반 vim 사용할 때는 /etc/vim 에 가서 vimrc 파일을 연다.)  
+PlugInstall 하고 UpdateRemotePlugins 를 입력한다.  
+(nvim이 아닌 일반 vim 사용할 때는 /etc/vim 에 가서 vimrc 파일을 수정한다.)  
+***
+### CoC 설정하기
+**clangd 설치하기(c/c++ 자동완성)**
+```swift
+sudo apt-get install clangd-12
+```
+```swift
+sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-12 100
+```
+**coc-jedi 설정(파이썬 자동완성)**
+```swift
+cp ~/my_linux_mint_setting/coc-settings.json ~/.config/nvim/
+```
+**CoC 적용하기**
+```swift
+CocInstall coc-clangd coc-python coc-jedi coc-sh coc-vimlsp
+```
+
+전반적인 참조 사이트  
+https://www.chrisatmachine.com/Neovim/04-vim-coc/  
+https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions              <- 원하는 coc 있을 때는 여기 주로 참조하기  
+https://johngrib.github.io/wiki/vim-auto-completion/  
 ***
 ### zsh 및 oh-my-zsh 설치
 ```swift
