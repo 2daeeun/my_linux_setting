@@ -59,6 +59,7 @@ sudo wget -P /usr/share/fonts https://github.com/ryanoasis/nerd-fonts/raw/master
 ```
 ```swift
 sudo fc-cache -f -v
+```
 ***
 ### 터미네이터 설정 
 ```swift
