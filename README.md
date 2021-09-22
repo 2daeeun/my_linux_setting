@@ -166,6 +166,7 @@ sudo apt-get install clangd-12
 sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-12 100
 ```
 다음에 clangd를 위에처럼 사용하지 않고, nvim에서 **:CocCommand clangd.install** 을 입력하여 설치를 진행하고 **:CocCommand clangd.update** 명령어를 입력해서 실제 실행되는지 확인해 보기. 안되면 그냥 위의 방법처럼 하고  
+  
 **[coc-jedi](https://github.com/pappasam/coc-jedi "coc-jedi") 설정(파이썬 자동완성)**
 ```swift
 cp ~/my_linux_mint_setting/coc-settings.json ~/.config/nvim/
