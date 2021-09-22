@@ -180,10 +180,7 @@ CoC와 LSP 전반적으로 참조 사이트
 [Chris@Machine ~Neovim Intellisense with coc](https://www.chrisatmachine.com/Neovim/04-vim-coc/)  
 [coc.nvim](https://github.com/neoclide/coc.nvim)  
 [coc-extnsions](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions)  
-[기계인간 ~coc.nvim 설치](https://johngrib.github.io/wiki/vim-auto-completion/)  
-https://www.chrisatmachine.com/Neovim/04-vim-coc/  
-https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions              <- 원하는 coc 있을 때는 여기 주로 참조하기  
-https://johngrib.github.io/wiki/vim-auto-completion/  
+[기계인간 ~coc.nvim 설치](https://johngrib.github.io/wiki/vim-auto-completion/)                                    <-원하는 LSP서버는 주로 여기서 참조하기 
 ***
 ### zsh 및 oh-my-zsh 설치
 ```swift
