@@ -77,10 +77,7 @@ wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
 sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
 ```
 ```swift
-sudo apt-get update
-```
-```swift
-sudo apt-get install atom
+sudo apt-get update && sudo apt-get install atom
 ```
 ***
 ### 크롬 설치
@@ -91,10 +88,7 @@ wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-ke
 sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 ```
 ```swift
-sudo apt-get update && sudo apt-get install google-chrome-stable
-```
-```swift
-sudo apt install python3-apt
+sudo apt-get update && sudo apt install python3-apt && sudo apt-get install google-chrome-stable
 ```
 ```swift
 sudo rm -rf /etc/apt/sources.list.d/google.list
