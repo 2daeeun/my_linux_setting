@@ -66,7 +66,7 @@ cp ~/my_linux_mint_setting/config ~/.config/terminator/
 ***
 ### 부팅 시 자동실행 명령어 등록
 ```swift
-sudo cp startup.sh /etc/profile.d/ 
+sudo ~/my_linux_mint_setting/startup.sh /etc/profile.d/ 
 ```
 ***
 ### 아톰 설치
