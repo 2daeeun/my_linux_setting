@@ -116,12 +116,19 @@ sudo apt-get install -y tlp tlp-rdw && sudo tlp start
 ```
 ***
 ### Slimbook Battery 설치
+Intel CPU
 ```swift
 sudo add-apt-repository ppa:slimbook/slimbook
 ```
 ```swift
 sudo apt update && sudo apt install slimbookbattery
 ```
+AMD CPU
+```swift
+sudo add-apt-repository ppa:slimbook/slimbook
+```
+```swift
+sudo apt update && sudo apt-get install slimbookamdcontroller
 ***
 ### Node.Js 설치
 ```swift
