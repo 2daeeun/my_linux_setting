@@ -6,3 +6,5 @@ xinput --set-prop "TPPS/2 Elan TrackPoint" "libinput Accel Speed" -1.0 &
 rfkill block bluetooth &
 #enable_hangul_to_fcitx(fcitx를_이용해서_한글_활성화)
 fcitx &
+#tlp 실행
+tlp start &
