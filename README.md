@@ -139,7 +139,16 @@ sudo apt-get install curl
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 ```
 ```swift
-sudo apt-get update && sudo apt-get install -y nodejs && sudo apt-get install build-essential && sudo apt-get install gcc g++ make && curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null && echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list && sudo apt-get install yarn
+sudo apt-get update && sudo apt-get install -y nodejs && sudo apt-get install build-essential && sudo apt-get install gcc g++ make
+```
+```swift
+curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null
+```
+```swift
+echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+```
+```swift
+sudo apt-get install yarn
 ```
 PPA를 통해서 Node.JS를 설치하면 NodeJS 뿐만 아니라 npm도 같이 설치되는데, npm install시 에러가 나는 것을 방지하기 위해 build-essential을 설치해준다.
 ***
@@ -175,12 +184,6 @@ CocCommand clangd.install
 ```
 ```swift
 CocCommand clangd.update
-```
-```swift
-sudo apt-get install clangd-12
-```
-```swift
-sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-12 100
 ```
 nvim에서 **:CocCommand clangd.install** 을 입력하여 설치를 진행하고 **:CocCommand clangd.update** 명령어를 입력해서 실제 실행되는지 확인해 보기.  만약 안된다면 수동으로 sudo apt-get install clangd-12 로 설치하고 CocInstall coc-clangd coc-python coc-jedi coc-sh coc-vimlsp 로 path 
   
