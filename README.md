@@ -139,7 +139,7 @@ sudo apt-get install curl
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 ```
 ```swift
-sudo apt-get install -y nodejs && sudo apt-get install build-essential
+sudo apt-get update && sudo apt-get install -y nodejs && sudo apt-get install build-essential && sudo apt-get install gcc g++ make && curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null && echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list && sudo apt-get install yarn
 ```
 PPA를 통해서 Node.JS를 설치하면 NodeJS 뿐만 아니라 npm도 같이 설치되는데, npm install시 에러가 나는 것을 방지하기 위해 build-essential을 설치해준다.
 ***
@@ -168,12 +168,21 @@ cp ~/my_linux_mint_setting/init.vim ~/.config/nvim/
 ### LSP 설정하기
 **[clangd](https://clangd.llvm.org/installation.html "clangd") 설치하기(c/c++ 자동완성)**
 ```swift
+CocInstall coc-clangd
+```
+```swift
+CocCommand clangd.install
+```
+```swift
+CocCommand clangd.update
+```
+```swift
 sudo apt-get install clangd-12
 ```
 ```swift
 sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-12 100
 ```
-다음에 clangd를 위에처럼 사용하지 않고, nvim에서 **:CocCommand clangd.install** 을 입력하여 설치를 진행하고 **:CocCommand clangd.update** 명령어를 입력해서 실제 실행되는지 확인해 보기. 안되면 그냥 위의 방법처럼 하고  
+nvim에서 **:CocCommand clangd.install** 을 입력하여 설치를 진행하고 **:CocCommand clangd.update** 명령어를 입력해서 실제 실행되는지 확인해 보기.  만약 안된다면 수동으로 sudo apt-get install clangd-12 로 설치하고 CocInstall coc-clangd coc-python coc-jedi coc-sh coc-vimlsp 로 path 
   
 **[coc-jedi](https://github.com/pappasam/coc-jedi "coc-jedi") 설정(파이썬 자동완성)**
 ```swift
@@ -190,6 +199,7 @@ CoC와 LSP 전반적으로 참조 사이트
 [coc.nvim](https://github.com/neoclide/coc.nvim)  
 **[coc-extnsions](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions)** <-원하는 LSP서버는 주로 여기를 참조하자  
 [기계인간 ~coc.nvim 설치](https://johngrib.github.io/wiki/vim-auto-completion/)  
+https://tyanjournal.com/tips/neovim-c-ide/
 ***
 ### zsh 및 oh-my-zsh 설치
 ```swift
