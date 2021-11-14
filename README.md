@@ -131,14 +131,14 @@ Intel CPU
 sudo add-apt-repository ppa:slimbook/slimbook
 ```
 ```swift
-sudo apt update && sudo apt install slimbookbattery
+sudo apt-get update && sudo apt install slimbookbattery
 ```
 AMD CPU
 ```swift
 sudo add-apt-repository ppa:slimbook/slimbook
 ```
 ```swift
-sudo apt update && sudo apt-get install slimbookamdcontroller
+sudo apt-get update && sudo apt-get install slimbookamdcontroller
 ```
 ***
 ### Node.Js 설치
