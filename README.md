@@ -16,6 +16,14 @@ This is my personal Linux Mint setting.
 ### 애플릿에서 설정 해야 할 것
 * CPU Temperature Indicator
 * System Monitor
+* 날씨 (Location은 "37.5508,126.8648(등촌역)"으로 설정)
+***
+### 토토로 바탕화면 설정
+```swift
+sudo wget -P ../../ https://github.com/largesilver/my_linux_mint_setting/raw/master/totoro.png
+```
+[사진출처](https://wallpaperaccess.com/download/totoro-pc-1998829)
+(메뉴 > 배경화면)에서 배경화면 설정하기
 ***
 ### 삭제 해야 할 프로그램
 * Celluloid
