@@ -272,6 +272,13 @@ cd fonts
 sudo rm -r ~/fonts/
 ```
 ***
+### alias 설정
+```swift
+alias powerup="sudo apt-get update && sudo apt-get upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y"
+alias rrm="mv -t /home/leedaeeun/.local/share/Trash/files"
+```
+.zshrc 파일에서 위의 alias 라인 삽입
+***
 ### 그놈 터미널 삭제
 ```swift
 sudo apt-get --purge remove gnome-terminal gnome-terminal-data
