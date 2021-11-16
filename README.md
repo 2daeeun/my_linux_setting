@@ -279,6 +279,14 @@ alias rrm="mv -t /home/leedaeeun/.local/share/Trash/files"
 ```
 .zshrc 파일에서 위의 alias 라인 삽입
 ***
+### unzip 한글 깨짐 방지
+```swift
+export UNZIP="-O cp949"
+export ZIPINFO="-O cp949"
+```
+.zshrc 파일에서 위의  라인 삽입
+***
+
 ### 그놈 터미널 삭제
 ```swift
 sudo apt-get --purge remove gnome-terminal gnome-terminal-data
