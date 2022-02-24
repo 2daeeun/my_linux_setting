@@ -2,7 +2,8 @@
 syntax enable			        "구문강조
 set encoding=UTF-8		        "한글 깨짐 방지 
 set termguicolors		        "트루 컬러 지원
-set number                      "라인 넘버 표시
+set number                      "라인 넘버 표시(set nu 라고 입력해도 됨)
+"set nonumber                   "라인 넘버 비활성(set nu! 라고 입력해도 됨)
 set hlsearch                    "검색 시 하이라이트 
 set ignorecase                  "검색 시 대소문자 무시하기
 "set noignorecase               "검색 시 대소문자 구분하기
@@ -22,7 +23,6 @@ set cindent                     "C언어 자동 들여 쓰기
 set tabstop=4                   "탭을 4칸으로
 set shiftwidth=4                " >> 또는 << 키로 들여 쓰기 할때 스페이스의 갯수. 기본값 8
 set expandtab                   "탭을 스페이스로 바꾸기
-set list lcs=trail:·,tab:├─     "화이트스페이스 표시
 
 
 "==========플러그인 설치==========
@@ -33,9 +33,12 @@ Plug 'joshdick/onedark.vim'                         "onedark 테마
 Plug 'vim-airline/vim-airline'                      "airline(vi 하단하고 상단 꾸밈)              
 Plug 'vim-airline/vim-airline-themes'               "airline 테마
 "-----자동완성-----
-Plug 'neoclide/coc.nvim', {'branch': 'release'}     "CoC 자동 완성
+Plug 'neoclide/coc.nvim', {'branch': 'release'}     " Use release branch
+Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}             " Or latest tag
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}      " Or build from source code by use yarn: https://yarnpkg.com
 Plug 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn build', 'branch': 'main' }    "파이썬 자동 완성
 Plug 'davidhalter/jedi-vim'                         "자동완성 라이브러리
+Plug 'vim-scripts/indentLine.vim'                   "들여쓰기 안내선
 Plug 'jiangmiao/auto-pairs'                         "대괄호, 괄호, 따옴표 등을 쌍으로 삽입하거나 삭제.
 "
 "           -auto-pairs 사용법-
@@ -50,27 +53,19 @@ Plug 'scrooloose/nerdtree'                          "NERDTree 설치
 Plug 'jistr/vim-nerdtree-tabs'                      "NERDTree Tabs 설치
 Plug 'ryanoasis/vim-devicons'                       "NERDTree에 예쁜 아이콘을 붙여주는 플러그인,nerd font 설치 필요함
 "-----HTML/CSS/JavaScript-----
-Plug 'mattn/emmet-vim'  							"html:5 를 입력 후 ctrl y 를 누른 뒤 ,를 누르면 html폼이 완성되는 플러그인
-Plug 'ap/vim-css-color'                             "css 소스코딩 하는 동안 색상들을 미리 보는 것
-Plug 'ying17zi/vim-live-latex-preview'              "vim-live-latex-previe
+"Plug 'mattn/emmet-vim'  							"html:5 를 입력 후 ctrl y 를 누른 뒤 ,를 누르면 html폼이 완성되는 플러그인
+"Plug 'ap/vim-css-color'                            "css 소스코딩 하는 동안 색상들을 미리 보는 것
+"Plug 'ying17zi/vim-live-latex-preview'             "vim-live-latex-previe
 "-----기타-----
-Plug 'valloric/vim-indent-guides'                   
-
 
 "-----유용하지만 사용 안하는 플러그인-----
-"Plug 'preservim/tagbar'                             "현재 파일내의 class, struct, prototype, typedef, macro 등을 요약하여 표시한다.
-"Plug 'tpope/vim-fugitive'
-"ctrlp.vim
-" vim-surround                                        "이거 몰라... 알아보자
-" Plug 'mhinz/vim-startify'                         "https://vimawesome.com/plugin/vim-startify 
-" Plug 'nightsense/simplifysimplify'
-"vim-easymotion, Language Server Protocol(솔직히 coc하고 뭐가 다른지는
-"모르겠는데 일단 써보자), surround.vim
-"그리고 ㅅㅂ 아이콘 깨지는거 미루지 말자. 문제 있는건 알면 좀 고치자
-
+"Plug 'preservim/tagbar'                            "현재 파일내의 class, struct, prototype, typedef, macro 등을 요약하여 표시한다.
+"Plug 'tpope/vim-fugitive'                          "git과 함께 쓰면 좋은 것
+"ctrlp.vim                                          "vim내에서 파일을 쉽게 검색해서 해당 파일을 열게 해주는 플러그인
+"Plug 'anyakichi/vim-surround'                      "수동 괄호 감싸기
+"Plug 'mhinz/vim-startify'                          "Vim 및 Neovim의 시작 화면을 제공
 
 call plug#end()
-
 "==========기타==========
 
 "-----플러그인 설치를 위한 설정-----
@@ -90,7 +85,6 @@ let g:lightline = {
   \ 'colorscheme': 'onedark',
   \ } 
 
-" 바탕화면을 투명하게 설정 합니다
 hi Normal guibg=NONE ctermbg=NONE
 
 "----- Nerd Tree -----
@@ -98,24 +92,10 @@ let NERDTreeWinPos = "left"
 nmap <F7> :NERDTree<CR>
 nnoremap <leader>r :NERDTreeFind<CR>
 
-"----- C언어 컴파일 단축키 -----
-map <F9> :! gcc % -o %<<CR>
-map <F10> :! ./%<<CR>
-
-
-
-
-
-
-let g:indent_guides_auto_colors = 0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
-
-
-
-
-
-
+"----- 컴파일 단축키 -----
+autocmd filetype python nnoremap <F9> :w <bar> exec '!python '.shellescape('%')<CR>
+autocmd filetype c nnoremap <F9> :w <bar> exec '!gcc '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
+autocmd filetype cpp nnoremap <F9> :w <bar> exec '!g++ '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
 
 "tagbar 관련 
 "nmap <F8> :TagbarToggle<CR>
@@ -123,4 +103,9 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 "----- Emmet 자동완성 단축키 -----
 "let g:user_emmet_leader_key=','
 
-"이거 복사 붙여넣기 끝난 뒤에는 nvim에서 PlugInstall 하고 UpdateRemotePlugins 입력하기(플러그인 삭제는 PlugClean)
+"----- Indent Guides(들여쓰기 안내선) -----
+let g:indentLine_char = '┆'
+let g:indentLine_color_term = 256
+
+
+"이거 복사 붙여넣기 끝난 뒤에는 nvim에서 source % 하고 PlugInstall 하고 UpdateRemotePlugins 입력하기(플러그인 삭제는 PlugClean)
