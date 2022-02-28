@@ -17,7 +17,7 @@ This is my personal Linux Mint setting.
 ### 애플릿에서 설정 해야 할 것
 * CPU Temperature Indicator
 * System Monitor
-* 날씨 (Location은 "37.5508,126.8648(등촌역)"으로 설정)
+* Weather (설정값은 Weather.json 다운 받아서 가져오기)
 ***
 ### 토토로 바탕화면 설정
 ```swift
@@ -34,10 +34,11 @@ sudo wget -P ../../ https://github.com/largesilver/my_linux_mint_setting/raw/mas
 * Onboard
 * Rhythmbox
 * Hexchat
+* Hypnotix
 * Thunderbird
-* Libreoffice
+* ~~Libreoffice~~
 ```swift
-sudo apt-get --purge remove celluloid hypnotix pix* drawing onboard* rhythmbox* hexchat* thunderbird* libreoffice*
+sudo apt-get --purge remove celluloid hypnotix pix* drawing onboard* rhythmbox* hexchat* hypnotix* thunderbird*
 ```
 ***
 ### 설치 해야 할 프로그램
@@ -47,7 +48,8 @@ sudo apt-get --purge remove celluloid hypnotix pix* drawing onboard* rhythmbox* 
 * Numlock 활성화(설치 후 Login Window -> Settings에서 Activate numlock 선택하기)
 * git
 * PPA 지원
-* axel
+* ~~axel~~
+* aria2
 * stdio.h 해더파일
 * 나눔폰트
 * 카메라(cheese)
@@ -55,12 +57,17 @@ sudo apt-get --purge remove celluloid hypnotix pix* drawing onboard* rhythmbox* 
 * Parcellite(클립보드)(단축키는 Ctrl+Alt+H)
 * barrier
 ```swift
-sudo apt-get install vlc terminator kolourpaint numlockx git software-properties-common axel libc6-dev fonts-nanum cheese virtualbox parcellite barrier
+sudo apt-get install vlc terminator kolourpaint numlockx git software-properties-common aria2 libc6-dev fonts-nanum cheese virtualbox parcellite barrier -y
 ```
 만약 Vlc 설치가 잘 안될 경우
 ```swift
 sudo apt install snap snapd && sudo snap install vlc
 ```
+***
+### 학교 수업을 위해 ~~어쩔 수 없이~~ 설치해야 할 프로그램
+* Band
+* OBS Studio & FFmpeg
+* Zoom
 ***
 ### Nerd Fonts 설치
 ```swift
