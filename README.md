@@ -92,6 +92,10 @@ cp ~/my_linux_mint_setting/config ~/.config/terminator/
 ```
 ***
 ### 부팅 시 자동실행 명령어 등록
+* 부팅시 빨콩 속도조절
+* 부팅시 블루투스 비활성화
+* 부팅시 fcitx를 이용해 한글 활성화
+* 부팅시 tlp 자동 실행
 ```swift
 sudo cp ~/my_linux_mint_setting/startup.sh /etc/profile.d/ 
 ```
