@@ -65,9 +65,12 @@ sudo apt install snap snapd && sudo snap install vlc
 ```
 ***
 ### 학교 수업을 위해 ~~어쩔 수 없이~~ 설치해야 할 프로그램
-* Band
-* OBS Studio & FFmpeg
-* Zoom
+* Band (https://band.us/cs/notice/1301),(sudo wget https://ssl.pstatic.net/cmstatic/desktop/v1.10.9/BAND-1.10.9-amd64.deb && dpkg -i BAND-1.10.9-amd64.deb)
+* OBS Studio & FFmpeg (https://obsproject.com/ko/download), (sudo apt-get install ffmpeg && sudo apt-get install obs-studio
+* Zoom (sudo wget https://zoom.us/client/latest/zoom_amd64.deb && dpkg -i zoom_amd64.deb)
+```swift
+sudo wget https://ssl.pstatic.net/cmstatic/desktop/v1.10.9/BAND-1.10.9-amd64.deb && dpkg -i BAND-1.10.9-amd64.deb && sudo apt-get install ffmpeg -y && sudo apt-get install obs-studio -y && sudo wget https://zoom.us/client/latest/zoom_amd64.deb && dpkg -i zoom_amd64.deb
+```
 ***
 ### Nerd Fonts 설치
 ```swift
