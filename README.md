@@ -42,7 +42,7 @@ sudo wget -P ../../ https://github.com/largesilver/my_linux_mint_setting/raw/mas
 sudo apt-get --purge remove celluloid hypnotix pix* drawing onboard* rhythmbox* hexchat* hypnotix* thunderbird* firefox*
 ```
 ```swift
-sudo rm -Rf /etc/firefox/ /usr/lib/firefox*/ /usr/lib/firefox-addons/ /home/leedaeeun/.mozilla
+sudo rm -Rf /etc/firefox/ /usr/lib/firefox* /usr/lib/firefox-addons/ /home/leedaeeun/.mozilla
 ```
 ***
 ### 설치 해야 할 프로그램
@@ -82,13 +82,7 @@ sudo fc-cache -f -v
 ***
 ### 터미네이터 설정 
 ```swift
-git clone https://github.com/largesilver/my_linux_mint_setting.git
-```
-```swift
-mkdir ~/.config/terminator
-```
-```swift
-cp ~/my_linux_mint_setting/config ~/.config/terminator/
+sudo mkdir ~/.config/terminator && wget https://raw.githubusercontent.com/2daeeun/my_linux_mint_setting/master/config && sudo mv config ~/.config/terminator && sudo mv ~/.config/terminator/config ~/.config/terminator/.config
 ```
 ***
 ### 부팅 시 자동실행 명령어 등록
