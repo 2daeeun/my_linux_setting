@@ -74,10 +74,7 @@ sudo wget https://ssl.pstatic.net/cmstatic/desktop/v1.10.9/BAND-1.10.9-amd64.deb
 ***
 ### Nerd Fonts 설치
 ```swift
-sudo wget -P /usr/share/fonts https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf
-```
-```swift
-sudo fc-cache -f -v
+sudo wget -P /usr/share/fonts https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf && sudo fc-cache -f -vㅛ
 ```
 ***
 ### 터미네이터 설정 
@@ -144,13 +141,7 @@ sudo apt-get update && sudo apt-get install slimbookamdcontroller
 ***
 ### Node.Js 설치
 ```swift
-sudo apt-get install curl
-```
-```swift
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-```
-```swift
-sudo apt-get update && sudo apt-get install -y nodejs && sudo apt-get install build-essential && sudo apt-get install gcc g++ make
+sudo apt-get install curl && curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - && sudo apt-get update && sudo apt-get install -y nodejs && sudo apt-get install build-essential && sudo apt-get install gcc g++ make -y
 ```
 PPA를 통해서 Node.JS를 설치하면 NodeJS 뿐만 아니라 npm도 같이 설치되는데, npm install시 에러가 나는 것을 방지하기 위해 build-essential을 설치해준다.
 ***
