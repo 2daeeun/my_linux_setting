@@ -233,7 +233,7 @@ sudo apt install fonts-powerline
 sudo apt-get install fonts-powerline
 ```
 ```swift
-이건 사용 안해보고 apt-get install 로 사용해보기
+이거 위의 'zsh 및 oh-my-zsh 설치'의 마지막 줄하고 중복됨 폰트 깨지나 안꺠지나 확인해보기. 안깨지면 이 항목 삭제.
 git clone https://github.com/powerline/fonts.git
 cd fonts
 ./install.sh
