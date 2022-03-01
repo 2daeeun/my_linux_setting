@@ -42,7 +42,7 @@ sudo wget -P ../../ https://github.com/largesilver/my_linux_mint_setting/raw/mas
 sudo apt-get --purge remove celluloid hypnotix pix* drawing onboard* rhythmbox* hexchat* hypnotix* thunderbird* firefox*
 ```
 ```swift
-sudo rm -r /etc/firefox/ /usr/lib/firefox/ /usr/lib/firefox-addons/ /home/leedaeeun/.mozilla
+sudo rm -Rf /etc/firefox/ /usr/lib/firefox*/ /usr/lib/firefox-addons/ /home/leedaeeun/.mozilla
 ```
 ***
 ### 설치 해야 할 프로그램
@@ -62,10 +62,6 @@ sudo rm -r /etc/firefox/ /usr/lib/firefox/ /usr/lib/firefox-addons/ /home/leedae
 * barrier
 ```swift
 sudo apt-get install vlc terminator kolourpaint numlockx git software-properties-common aria2 libc6-dev fonts-nanum cheese virtualbox parcellite barrier -y
-```
-만약 Vlc 설치가 잘 안될 경우
-```swift
-sudo apt install snap snapd && sudo snap install vlc
 ```
 ***
 ### 학교 수업을 위해 ~~어쩔 수 없이~~ 설치해야 할 프로그램
