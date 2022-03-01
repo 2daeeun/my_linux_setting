@@ -232,18 +232,18 @@ sudo apt install fonts-powerline
 ```swift
 sudo apt-get install fonts-powerline
 ```
-~~```swift
-git clone https://github.com/powerline/fonts.git
+```swift
+~~git clone https://github.com/powerline/fonts.git~~
 ```
 ```swift
-cd fonts
+~~cd fonts~~
 ```
 ```swift
-./install.sh
+~~./install.sh~~
 ```
 ```swift
-sudo rm -r ~/fonts/
-```~~
+~~sudo rm -r ~/fonts/~~
+```
 ***
 ### zshrc 파일 설정
 * oh-my-zsh 테마 변경
