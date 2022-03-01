@@ -230,6 +230,9 @@ sudo apt install fonts-powerline
 ***
 ### oh-my-zsh 폰트 깨짐 방지
 ```swift
+sudo apt-get install fonts-powerline
+```
+~~```swift
 git clone https://github.com/powerline/fonts.git
 ```
 ```swift
@@ -240,7 +243,7 @@ cd fonts
 ```
 ```swift
 sudo rm -r ~/fonts/
-```
+```~~
 ***
 ### zshrc 파일 설정
 * oh-my-zsh 테마 변경
