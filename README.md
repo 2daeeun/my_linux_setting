@@ -179,10 +179,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.g
 ***
 ### NeoVim 설정
 ```swift
-mkdir ~/.config/nvim
-```
-```swift
-cp ~/my_linux_mint_setting/init.vim ~/.config/nvim/
+mkdir ~/.config/nvim && wget -P ~/.config/nvim/ https://raw.githubusercontent.com/2daeeun/my_linux_mint_setting/master/init.vim
 ```
 **:PlugInstall** 하고 **:UpdateRemotePlugins** 를 입력한다.  
 (nvim이 아닌 일반 vim 사용할 때는 /etc/vim 에 가서 vimrc 파일을 수정한다.)  
