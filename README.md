@@ -82,7 +82,7 @@ sudo fc-cache -f -v
 ***
 ### 터미네이터 설정 
 ```swift
-sudo mkdir ~/.config/terminator && wget https://raw.githubusercontent.com/2daeeun/my_linux_mint_setting/master/config && sudo mv config ~/.config/terminator && sudo mv ~/.config/terminator/config ~/.config/terminator/.config
+mkdir ~/.config/terminator && wget https://raw.githubusercontent.com/2daeeun/my_linux_mint_setting/master/config && mv config ~/.config/terminator && mv ~/.config/terminator/config ~/.config/terminator/.config
 ```
 ***
 ### 부팅 시 자동실행 명령어 등록
