@@ -245,16 +245,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 sudo apt install fonts-powerline
 ```
 ***
-### zshrc 파일
-* oh-my-zsh 테마 변경
-* zsh 플러그인 설치
-* alias 설정
-* unzip 한글 깨짐 방지
-```swift
-wget https://raw.githubusercontent.com/2daeeun/my_linux_mint_setting/master/zshrc && mv zshrc .zshrc && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting && git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-```
-zshrc 파일을 어떻게 설정했는지에 대한 세부적인 내용은 [zshrcConfig.md](https://github.com/2daeeun/my_linux_mint_setting/blob/master/zshrcConfig.md) 참조
-***
 ### oh-my-zsh 폰트 깨짐 방지
 ```swift
 git clone https://github.com/powerline/fonts.git
@@ -269,7 +259,16 @@ cd fonts
 sudo rm -r ~/fonts/
 ```
 ***
-
+### zshrc 파일 설정
+* oh-my-zsh 테마 변경
+* zsh 플러그인 설치
+* alias 설정
+* unzip 한글 깨짐 방지
+```swift
+wget https://raw.githubusercontent.com/2daeeun/my_linux_mint_setting/master/zshrc && mv zshrc .zshrc && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting && git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+```
+zshrc 파일을 어떻게 설정했는지에 대한 세부적인 내용은 [zshrcConfig.md](https://github.com/2daeeun/my_linux_mint_setting/blob/master/zshrcConfig.md) 참조
+***
 ### 그놈 터미널 삭제
 ```swift
 sudo apt-get --purge remove gnome-terminal gnome-terminal-data
