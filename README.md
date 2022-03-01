@@ -233,16 +233,11 @@ sudo apt install fonts-powerline
 sudo apt-get install fonts-powerline
 ```
 ```swift
-~~git clone https://github.com/powerline/fonts.git~~
-```
-```swift
-~~cd fonts~~
-```
-```swift
-~~./install.sh~~
-```
-```swift
-~~sudo rm -r ~/fonts/~~
+이건 사용 안해보고 apt-get install 로 사용해보기
+git clone https://github.com/powerline/fonts.git
+cd fonts
+./install.sh
+sudo rm -r ~/fonts/
 ```
 ***
 ### zshrc 파일 설정
