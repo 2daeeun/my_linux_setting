@@ -36,9 +36,13 @@ sudo wget -P ../../ https://github.com/largesilver/my_linux_mint_setting/raw/mas
 * Hexchat
 * Hypnotix
 * Thunderbird
+* Firefox
 * ~~Libreoffice~~
 ```swift
-sudo apt-get --purge remove celluloid hypnotix pix* drawing onboard* rhythmbox* hexchat* hypnotix* thunderbird*
+sudo apt-get --purge remove celluloid hypnotix pix* drawing onboard* rhythmbox* hexchat* hypnotix* thunderbird* firefox*
+```
+```swift
+sudo rm -r /etc/firefox/ /usr/lib/firefox/ /usr/lib/firefox-addons/ /home/leedaeeun/.mozilla
 ```
 ***
 ### 설치 해야 할 프로그램
@@ -125,14 +129,6 @@ sudo apt-get update && sudo apt install python3-apt && sudo apt-get install goog
 ```
 ```swift
 sudo rm -rf /etc/apt/sources.list.d/google.list
-```
-***
-### 파이어폭스 삭제
-```swift
-sudo apt-get --purge remove firefox*
-```
-```swift
-sudo rm -r /etc/firefox/ /usr/lib/firefox/ /usr/lib/firefox-addons/ /home/leedaeeun/.mozilla
 ```
 ***
 ### TLP Laptop battery saver 설치
