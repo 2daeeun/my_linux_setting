@@ -91,7 +91,7 @@ sudo mkdir ~/.config/terminator && wget https://raw.githubusercontent.com/2daeeu
 * 부팅시 fcitx를 이용해 한글 활성화
 * 부팅시 tlp 자동 실행
 ```swift
-sudo cp ~/my_linux_mint_setting/startup.sh /etc/profile.d/ 
+sudo wget -P /etc/profile.d/ https://raw.githubusercontent.com/2daeeun/my_linux_mint_setting/master/startup.sh
 ```
 ***
 ### 아톰 설치
