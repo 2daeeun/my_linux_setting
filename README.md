@@ -182,7 +182,7 @@ mkdir ~/.config/nvim && wget -P ~/.config/nvim/ https://raw.githubusercontent.co
 ***
 
 
-### L######anguage ###S######erver###P######rotocol 설정하기
+### L ######anguage ###S ######erver###P######rotocol 설정하기
 
 
 
