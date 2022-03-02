@@ -62,7 +62,7 @@ sudo rm -Rf /etc/firefox/ /usr/lib/firefox* /usr/lib/firefox-addons/ /home/leeda
 * Parcellite(클립보드)(단축키는 Ctrl+Alt+H)
 * barrier
 ```swift
-sudo apt-get install vlc terminator kolourpaint numlockx git curl software-properties-common aria2 libc6-dev fonts-nanum cheese virtualbox parcellite barrier -y
+sudo apt-get install vlc terminator kolourpaint numlockx git software-properties-common curl aria2 libc6-dev fonts-nanum cheese virtualbox parcellite barrier -y
 ```
 ***
 ### 학교 수업을 위해 ~~어쩔 수 없이~~ 설치해야 할 프로그램
