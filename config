@@ -1,7 +1,7 @@
 [global_config]
   enabled_plugins = ActivityWatch, LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler
   title_use_system_font = False
-  title_font = Ubuntu 10
+  title_font = Hack Nerd Font 10
 [keybindings]
 [profiles]
   [[default]]
