@@ -37,6 +37,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}     " Use release branch
 Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}             " Or latest tag
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}      " Or build from source code by use yarn: https://yarnpkg.com
 Plug 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn build', 'branch': 'main' }    "파이썬 자동 완성
+Plug 'yaegassy/coc-pydocstring', {'do': 'yarn install --frozen-lockfile'} "coc-pydocstring
 Plug 'davidhalter/jedi-vim'                         "자동완성 라이브러리
 Plug 'vim-scripts/indentLine.vim'                   "들여쓰기 안내선
 Plug 'jiangmiao/auto-pairs'                         "대괄호, 괄호, 따옴표 등을 쌍으로 삽입하거나 삭제.
