@@ -189,7 +189,7 @@ CoC(Conquer of Completion)는 언어를 자동완성(auto completion)해주는 i
 시작하기에 앞서
 CocInstall coc-json coc-tsserver
 
-**[coc-clangd](https://github.com/clangd/coc-clangd) 설치하기(C/C++/Objective-C 자동완성)**  
+**C/C++/Objective-C 자동완성**  
 
 vi에서  
 
@@ -201,17 +201,17 @@ CocInstall coc-clangd
 CocCommand clangd.install
 ```
 잘 설치되었는지 확인은 :CocCommand clangd.update 라고 입력하여 확인하기.    
-만약 안된다면 수동으로 sudo apt-get install clangd-12 로 설치하고 sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-12 100 로 path 지정하기.
+만약 안된다면 수동으로 sudo apt-get install clangd-12 로 설치하고, sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-12 100 로 path 지정하기.
 
 
-**[coc-jedi](https://github.com/pappasam/coc-jedi) 설치하기 (파이썬 자동완성)**
+**Python 자동완성**
 ```swift
 sudo apt install python3-dev python3-pip python3-venv
 ```
 ```swift
 CocInstall coc-jedi
 ```
-**[coc-java](https://github.com/neoclide/coc-java) 설치하기 (Java 자동완성)**
+**Java 자동완성**
 ```swift
 sudo apt-get install openjdk-17-jdk
 ```
