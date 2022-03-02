@@ -217,7 +217,8 @@ sudo apt-get install clangd-12
 sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-12 100
 ```
 CocCommand clangd.install
-nvim에서 **:CocCommand clangd.install** 을 입력하여 설치를 진행하고 **:CocCommand clangd.update** 명령어를 입력해서 실제 실행되는지 확인해 보기.  만약 안된다면 수동으로 sudo apt-get install clangd-12 로 설치하고 sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-12 100 로 path 지정하기.
+nvim에서 **:CocCommand clangd.install** 을 입력하여 설치를 진행하고 **:CocCommand clangd.update** 명령어를 입력해서 실제 실행되는지 확인해 보기.  
+만약 안된다면 수동으로 sudo apt-get install clangd-12 로 설치하고 sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-12 100 로 path 지정하기.
   
 **[coc-jedi](https://github.com/pappasam/coc-jedi "coc-jedi") 설정(파이썬 자동완성)**
 ```swift
