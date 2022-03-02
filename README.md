@@ -79,7 +79,7 @@ sudo wget -P /usr/share/fonts https://github.com/ryanoasis/nerd-fonts/raw/master
 ***
 ### 터미네이터 설정 
 ```swift
-mkdir ~/.config/terminator && wget https://raw.githubusercontent.com/2daeeun/my_linux_mint_setting/master/config && mv config ~/.config/terminator && mv ~/.config/terminator/config ~/.config/terminator/.config
+mkdir ~/.config/terminator && wget https://raw.githubusercontent.com/2daeeun/my_linux_mint_setting/master/config && mv config ~/.config/terminator
 ```
 ***
 ### 부팅 시 자동실행 명령어 등록
