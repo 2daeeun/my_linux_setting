@@ -141,24 +141,29 @@ sudo apt-get update && sudo apt-get install slimbookamdcontroller
 ```
 ***
 ### Node.Js 설치
+**Using Ubuntu**
 ```swift
-sudo apt-get install curl && curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash - && sudo apt-get update && sudo apt-get install -y nodejs && sudo apt-get install build-essential && sudo apt-get install gcc g++ make -y
+curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+sudo apt-get update && sudo apt-get install nodejs -y && sudo apt-get install build-essential -y && sudo apt-get install gcc g++ make -y
 ```
+**Using Debian, as root**
+```swift
+curl -fsSL https://deb.nodesource.com/setup_current.x | bash -
+sudo apt-get update && sudo apt-get install nodejs -y && sudo apt-get install build-essential -y && sudo apt-get install gcc g++ make -y
+```
+
+
 PPA를 통해서 Node.JS를 설치하면 NodeJS 뿐만 아니라 npm도 같이 설치되는데, npm install시 에러가 나는 것을 방지하기 위해 build-essential을 설치해준다.
 ***
 ### yarn 설치
 ```swift
-curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null && echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list && sudo apt-get install yarn -y
-```
-
-```swift
-curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | gpg --dearmor | sudo tee /usr/share/keyrings/yarnkey.gpg >/dev/null
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 ```
 ```swift
-echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/debian stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 ```
 ```swift
-sudo apt-get install yarn
+sudo apt-get update && sudo apt-get install yarn -y
 ```
 ***
 ### NeoVim 설치
@@ -249,11 +254,7 @@ sudo apt install fonts-powerline
 sudo apt-get install fonts-powerline
 ```
 ```swift
-이거 위의 'zsh 및 oh-my-zsh 설치'의 마지막 줄하고 중복됨 폰트 깨지나 안꺠지나 확인해보기. 안깨지면 이 항목 삭제.
-git clone https://github.com/powerline/fonts.git
-cd fonts
-./install.sh
-sudo rm -r ~/fonts/
+git clone https://github.com/powerline/fonts.git && cd fonts && ./install.sh && sudo rm -r ~/fonts/
 ```
 ***
 ### zshrc 파일 설정
@@ -262,7 +263,7 @@ sudo rm -r ~/fonts/
 * alias 설정
 * unzip 한글 깨짐 방지
 ```swift
-wget https://raw.githubusercontent.com/2daeeun/my_linux_mint_setting/master/zshrc && mv zshrc .zshrc && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting && git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+wget https://raw.githubusercontent.com/2daeeun/my_linux_mint_setting/master/zshrc && mv zshrc .zshrc && sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting && sudo git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 ```
 zshrc 파일을 어떻게 설정했는지에 대한 세부적인 내용은 [zshrcConfig.md](https://github.com/2daeeun/my_linux_mint_setting/blob/master/zshrcConfig.md) 참조
 ***
