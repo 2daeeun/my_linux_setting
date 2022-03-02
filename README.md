@@ -182,13 +182,14 @@ mkdir ~/.config/nvim && wget -P ~/.config/nvim/ https://raw.githubusercontent.co
 ***
 
 
-### CoC 설정하기
+### CoC 설정하기  
+
 CoC(Conquer of Completion)는 언어를 자동완성(auto completion)해주는 intellisense 엔진이다. LSP(Language Server Protocol)를 완전히 지원한다.
 
 시작하기에 앞서
 CocInstall coc-json coc-tsserver
 
-**[coc-clangd](https://github.com/clangd/coc-clangd) 설치하기(C/C++/Objective-C 자동완성)**
+**[coc-clangd](https://github.com/clangd/coc-clangd) 설치하기(C/C++/Objective-C 자동완성)**  
 vi에서  
 
 ```swift
@@ -198,8 +199,7 @@ CocInstall coc-clangd
 ```swift
 CocCommand clangd.install
 ```
-잘 설치되었는지 확인은 :CocCommand clangd.update 라고 입력하여 확인하기.
-  
+잘 설치되었는지 확인은 :CocCommand clangd.update 라고 입력하여 확인하기.    
 만약 안된다면 수동으로 sudo apt-get install clangd-12 로 설치하고 sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-12 100 로 path 지정하기.
 
 
