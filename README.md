@@ -185,7 +185,7 @@ mkdir ~/.config/nvim && wget -P ~/.config/nvim/ https://raw.githubusercontent.co
 ### CoC 설정하기
 CoC(Conquer of Completion)는 언어를 자동완성(auto completion)해주는 intellisense 엔진이다. LSP(Language Server Protocol)를 완전히 지원한다.
 
-**c/c++ 자동완성**
+**c/c++ 자동완성**  
 vi에서
 ```swift
 CocInstall coc-clangd
