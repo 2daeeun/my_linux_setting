@@ -190,6 +190,7 @@ CoC(Conquer of Completion)는 언어를 자동완성(auto completion)해주는 i
 CocInstall coc-json coc-tsserver
 
 **[coc-clangd](https://github.com/clangd/coc-clangd) 설치하기(C/C++/Objective-C 자동완성)**  
+
 vi에서  
 
 ```swift
@@ -203,15 +204,24 @@ CocCommand clangd.install
 만약 안된다면 수동으로 sudo apt-get install clangd-12 로 설치하고 sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-12 100 로 path 지정하기.
 
 
-**[coc-jedi](https://github.com/pappasam/coc-jedi "coc-jedi") 설치하기 (파이썬 자동완성)**
+**[coc-jedi](https://github.com/pappasam/coc-jedi) 설치하기 (파이썬 자동완성)**
 ```swift
-cp ~/my_linux_mint_setting/coc-settings.json ~/.config/nvim/
+sudo apt install python3-dev python3-pip python3-venv
 ```
-**LSP 등록하기**
 ```swift
-CocInstall coc-clangd coc-python coc-jedi coc-sh coc-vimlsp
+CocInstall coc-jedi
 ```
-nvim에서 **:CocInstall <LSP 서버명>** 을 이용해서 위의 명렁어를 입력한다.
+**[coc-java](https://github.com/neoclide/coc-java) 설치하기 (Java 자동완성)**
+```swift
+sudo apt-get install openjdk-17-jdk
+```
+```swift
+CocInstall coc-jedi
+```
+**기타 Coc 설치하기**
+```swift
+CocInstall coc-python coc-pydocstring coc-sh coc-vimlsp coc-json coc-tsserver
+```
 
 CoC와 LSP 전반적으로 참조 사이트  
 [Chris@Machine ~Neovim Intellisense with coc](https://www.chrisatmachine.com/Neovim/04-vim-coc/)  
