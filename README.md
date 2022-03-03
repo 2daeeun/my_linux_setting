@@ -49,6 +49,7 @@ sudo rm -Rf /etc/firefox/ /usr/lib/firefox* /usr/lib/firefox-addons/ /home/leeda
 * Terminator
 * Kolourpaint
 * Numlock 활성화(설치 후 Login Window -> Settings에서 Activate numlock 선택하기)
+* tlp & tlp-rdw
 * git
 * PPA 지원
 * curl
@@ -61,7 +62,7 @@ sudo rm -Rf /etc/firefox/ /usr/lib/firefox* /usr/lib/firefox-addons/ /home/leeda
 * Parcellite(클립보드)(단축키는 Ctrl+Alt+H)
 * barrier
 ```swift
-sudo apt-get install vlc terminator kolourpaint numlockx git software-properties-common curl aria2 libc6-dev fonts-nanum cheese torbrowser-launcher virtualbox parcellite barrier -y
+sudo apt-get install vlc terminator kolourpaint numlockx tlp tlp-rdw git software-properties-common curl aria2 libc6-dev fonts-nanum cheese torbrowser-launcher virtualbox parcellite barrier -y
 ```
 ***
 ### 학교 수업을 위해 ~~어쩔 수 없이~~ 설치해야 할 프로그램
@@ -122,11 +123,6 @@ atom-beautify, auto-indent, atom-alignment, autoclose-html, color-picker, highli
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install python3-apt && sudo apt install ./google-chrome-stable_current_amd64.deb && sudo rm -rf /etc/apt/sources.list.d/google.list
 ```
 예전의 내가 크롬 설치했던 방식 필요하면 history나 블로그 뒤져보기
-***
-### TLP Laptop battery saver 설치
-```swift
-sudo apt-get install -y tlp tlp-rdw && sudo tlp start
-```
 ***
 ### Slimbook Battery 설치
 Intel CPU
