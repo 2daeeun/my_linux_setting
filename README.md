@@ -37,7 +37,6 @@ sudo wget -P ../../ https://github.com/largesilver/my_linux_mint_setting/raw/mas
 * Hypnotix
 * Thunderbird
 * Firefox
-* ~~Libreoffice~~
 ```swift
 sudo apt-get --purge remove celluloid hypnotix pix* drawing onboard* rhythmbox* hexchat* hypnotix* thunderbird* firefox*
 ```
@@ -53,24 +52,37 @@ sudo rm -Rf /etc/firefox/ /usr/lib/firefox* /usr/lib/firefox-addons/ /home/leeda
 * git
 * PPA 지원
 * curl
-* ~~axel~~
 * aria2
 * stdio.h 해더파일
 * 나눔폰트
 * 카메라(cheese)
-* Virtualbox
+* Tor 브라우저
+* Virtualbox (의존성 문제 있으면 [이곳](https://www.virtualbox.org/wiki/Linux_Downloads)에서 직접 다운 받기)
 * Parcellite(클립보드)(단축키는 Ctrl+Alt+H)
 * barrier
 ```swift
-sudo apt-get install vlc terminator kolourpaint numlockx git software-properties-common curl aria2 libc6-dev fonts-nanum cheese virtualbox parcellite barrier -y
+sudo apt-get install vlc terminator kolourpaint numlockx git software-properties-common curl aria2 libc6-dev fonts-nanum cheese torbrowser-launcher virtualbox parcellite barrier -y
 ```
 ***
 ### 학교 수업을 위해 ~~어쩔 수 없이~~ 설치해야 할 프로그램
-* Band (https://band.us/cs/notice/1301),(sudo wget https://ssl.pstatic.net/cmstatic/desktop/v1.10.9/BAND-1.10.9-amd64.deb && dpkg -i BAND-1.10.9-amd64.deb)
-* OBS Studio & FFmpeg (https://obsproject.com/ko/download), (sudo apt-get install ffmpeg && sudo apt-get install obs-studio
-* Zoom (sudo wget https://zoom.us/client/latest/zoom_amd64.deb && dpkg -i zoom_amd64.deb)
+* Band
 ```swift
-sudo wget https://ssl.pstatic.net/cmstatic/desktop/v1.10.9/BAND-1.10.9-amd64.deb && dpkg -i BAND-1.10.9-amd64.deb && sudo apt-get install ffmpeg -y && sudo apt-get install obs-studio -y && sudo wget https://zoom.us/client/latest/zoom_amd64.deb && dpkg -i zoom_amd64.deb
+wget https://ssl.pstatic.net/cmstatic/desktop/v1.10.9/BAND-1.10.9-amd64.deb && sudo dpkg -i BAND-1.10.9-amd64.deb
+```
+* Band 설치하면서 libappindicator3-1 의존성 문제 생길 경우 
+```swift
+wget http://ftp.us.debian.org/debian/pool/main/libi/libindicator/libindicator3-7_0.5.0-4_amd64.deb
+wget http://ftp.us.debian.org/debian/pool/main/liba/libappindicator/libappindicator3-1_0.4.92-7_amd64.deb
+sudo apt install ./libindicator3-7_0.5.0-4_amd64.deb
+sudo apt install ./libappindicator3-1_0.4.92-7_amd64.deb
+```
+* OBS Studio & FFmpeg
+```swift
+sudo apt-get install ffmpeg && sudo apt-get install obs-studio
+```
+* Zoom 
+```swift
+wget https://zoom.us/client/latest/zoom_amd64.deb && sudo dpkg -i zoom_amd64.deb
 ```
 ***
 ### Nerd Fonts 설치
@@ -107,17 +119,9 @@ atom-beautify, auto-indent, atom-alignment, autoclose-html, color-picker, highli
 ***
 ### 크롬 설치
 ```swift
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install python3-apt && sudo apt install ./google-chrome-stable_current_amd64.deb && sudo rm -rf /etc/apt/sources.list.d/google.list
 ```
-```swift
-sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
-```
-```swift
-sudo apt-get update && sudo apt install python3-apt && sudo apt-get install google-chrome-stable
-```
-```swift
-sudo rm -rf /etc/apt/sources.list.d/google.list
-```
+예전의 내가 크롬 설치했던 방식 필요하면 history나 블로그 뒤져보기
 ***
 ### TLP Laptop battery saver 설치
 ```swift
@@ -263,7 +267,7 @@ git clone https://github.com/powerline/fonts.git && cd fonts && ./install.sh && 
 * alias 설정
 * unzip 한글 깨짐 방지
 ```swift
-wget https://raw.githubusercontent.com/2daeeun/my_linux_mint_setting/master/zshrc && mv zshrc .zshrc && sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting && sudo git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting && sudo git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions && mv .zshrc .zshrc.bak && wget -O .zshrc https://raw.githubusercontent.com/2daeeun/my_linux_mint_setting/master/zshrc
 ```
 zshrc 파일을 어떻게 설정했는지에 대한 세부적인 내용은 [zshrcConfig.md](https://github.com/2daeeun/my_linux_mint_setting/blob/master/zshrcConfig.md) 참조
 ***
