@@ -182,7 +182,9 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.g
 ```swift
 mkdir ~/.config/nvim && wget -P ~/.config/nvim/ https://raw.githubusercontent.com/2daeeun/my_linux_mint_setting/master/init.vim
 ```
-**:PlugInstall** 하고 **:UpdateRemotePlugins** 를 입력한다.  
+플러그인 설치 :**:source %** 하고 **:PlugInstall** 입력
+플러그인 제거 : 구성하는 줄 지우고 **:PlugClean** 입력
+플러그인 업데이트 : **:PlugUpdate** 하고 **:PlugUpgrade** 입력
 (nvim이 아닌 일반 vim 사용할 때는 /etc/vim 에 가서 vimrc 파일을 수정한다.)  
 ***
 
