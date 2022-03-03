@@ -247,16 +247,10 @@ chsh -s /usr/bin/zsh
 ```swift
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
-```swift
-sudo apt install fonts-powerline
-```
 ***
 ### oh-my-zsh 폰트 깨짐 방지
 ```swift
-sudo apt-get install fonts-powerline
-```
-```swift
-git clone https://github.com/powerline/fonts.git && cd fonts && ./install.sh && sudo rm -r ~/fonts/
+sudo apt-get install fonts-powerline && git clone https://github.com/powerline/fonts.git && cd fonts && ./install.sh && sudo rm -r ~/fonts/
 ```
 ***
 ### zshrc 파일 설정
