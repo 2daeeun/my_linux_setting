@@ -79,7 +79,7 @@ sudo apt install ./libappindicator3-1_0.4.92-7_amd64.deb
 ```
 * OBS Studio & FFmpeg
 ```swift
-sudo apt-get install ffmpeg && sudo apt-get install obs-studio
+sudo apt-get install ffmpeg && sudo apt-get install obs-studio -
 ```
 * Zoom 
 ```swift
