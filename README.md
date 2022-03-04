@@ -250,7 +250,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 ***
 ### oh-my-zsh 폰트 깨짐 방지
 ```swift
-sudo apt-get install fonts-powerline && git clone https://github.com/powerline/fonts.git && cd fonts && ./install.sh && sudo rm -r ~/fonts/ && cd ~
+sudo apt-get install fonts-powerline && git clone https://github.com/powerline/fonts.git && cd fonts && ./install.sh && cd ~ && sudo rm -rf /home/leedaeeun/fonts
 ```
 ***
 ### zshrc 파일 설정
