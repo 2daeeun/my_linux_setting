@@ -223,7 +223,7 @@ CocInstall coc-jedi
 sudo apt-get install openjdk-17-jdk
 ```
 ```swift
-CocInstall coc-jedi
+CocInstall coc-java
 ```
 **기타 Coc 설치하기**
 ```swift
