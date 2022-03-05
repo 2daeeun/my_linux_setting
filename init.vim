@@ -97,6 +97,7 @@ nnoremap <leader>r :NERDTreeFind<CR>
 autocmd filetype python nnoremap <F9> :w <bar> exec '!python '.shellescape('%')<CR>
 autocmd filetype c nnoremap <F9> :w <bar> exec '!gcc '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
 autocmd filetype cpp nnoremap <F9> :w <bar> exec '!g++ '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
+autocmd fileType java nnoremap <buffer> <F9> :exec '!javac' shellescape(expand('%'), 1) '&& java' shellescape(expand('%:r'), 1)<CR>
 
 "tagbar 관련 
 "nmap <F8> :TagbarToggle<CR>
