@@ -201,15 +201,16 @@ CocInstall coc-json coc-tsserver
 vi에서  
 
 ```swift
+sudo apt-get -y install ccls
+```
+```swift
 CocInstall coc-clangd
 ```
-
 ```swift
 CocCommand clangd.install
 ```
 잘 설치되었는지 확인은 :CocCommand clangd.update 라고 입력하여 확인하기.    
 만약 안된다면 수동으로 sudo apt-get install clangd-12 로 설치하고, sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-12 100 로 path 지정하기.
-
 
 **Python 자동완성**
 ```swift
@@ -221,6 +222,18 @@ CocInstall coc-jedi
 **Java 자동완성**
 ```swift
 sudo apt-get install openjdk-17-jdk
+```
+```swift
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+```
+```swift
+echo $JAVA_HOME
+```
+```swift
+export PATH=$PATH:$JAVA_HOME/bin
+```
+```swift
+echo $PATH
 ```
 ```swift
 CocInstall coc-java
