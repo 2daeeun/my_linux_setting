@@ -144,11 +144,12 @@ sudo apt-get update && sudo apt-get install slimbookamdcontroller
 **Using Ubuntu**
 ```swift
 curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+```
+```swift
 sudo apt-get update && sudo apt-get install nodejs -y && sudo apt-get install build-essential -y && sudo apt-get install gcc g++ make -y
 ```
 **Using Debian, as root**
 ```swift
-curl -fsSL https://deb.nodesource.com/setup_current.x | bash -
 sudo apt-get update && sudo apt-get install nodejs -y && sudo apt-get install build-essential -y && sudo apt-get install gcc g++ make -y
 ```
 
