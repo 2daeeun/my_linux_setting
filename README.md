@@ -285,9 +285,11 @@ sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/
 ```swift
 mv .zshrc .zshrc.bak && wget -O .zshrc https://raw.githubusercontent.com/2daeeun/my_linux_mint_setting/master/zshrc
 ```
+### 기본 쉘 확인=
 ```swift
 echo $SHELL
 ```
+만약 기본 쉘이 bash이면 [이 링크](https://nochoco-lee.tistory.com/350) 참고해서 쉘 바꾸기. 
 
 
 zshrc 파일을 어떻게 설정했는지에 대한 세부적인 내용은 [zshrcConfig.md](https://github.com/2daeeun/my_linux_mint_setting/blob/master/zshrcConfig.md) 참조
