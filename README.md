@@ -197,6 +197,10 @@ CoC(Conquer of Completion)는 언어를 자동완성(auto completion)해주는 i
 시작하기에 앞서
 CocInstall coc-json coc-tsserver
 
+**CoC Yarn 활성화**
+```swift
+cd ~/.local/share/nvim/plugged/coc.nvim && yarn install
+```
 **C/C++/Objective-C 자동완성**  
 
 vi에서  
