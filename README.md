@@ -2,7 +2,7 @@
 This is my personal Linux Mint setting. 
 ***
 ### 시나몬&애플릿&바탕화면 설정
-Cinnamon & Applet & Wallpaper 은 (CAW.md)[https://github.com/2daeeun/my_linux_mint_setting/blob/master/CAW.md]에서 확인하자.
+Cinnamon & Applet & Wallpaper은 [CAW.md](https://github.com/2daeeun/my_linux_mint_setting/blob/master/CAW.md)에서 확인하자.
 ***
 ### 삭제 해야 할 프로그램
 * Celluloid
