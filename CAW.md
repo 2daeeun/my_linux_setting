@@ -21,3 +21,5 @@
 ```swift
 sudo wget -P ../../ https://github.com/largesilver/my_linux_mint_setting/raw/master/totoro.png
 ```
+[사진출처](https://wallpaperaccess.com/download/totoro-pc-1998829)
+(메뉴 > 배경화면)에서 배경화면 설정하기
