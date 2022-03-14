@@ -94,7 +94,7 @@ sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ 
 sudo apt-get update && sudo apt-get install atom
 ```
 아톰 플러그인은 (Edit > preference > install)에 가서  
-atom-beautify, auto-indent, atom-alignment, autoclose-html, color-picker, highlight-selected, vim-mode-plus, minimap, emmet, Pigments, Linter 들을 설치하기
+atom-beautify, auto-indent, atom-alignment, autoclose-html, color-picker, highlight-selected, vim-mode-plus, minimap, emmet, Pigments, Linter, atom-html-preview  들을 설치하기
 ***
 ### 크롬 설치
 ```swift
