@@ -4,6 +4,12 @@ This is my personal Linux Mint setting.
 ### 시나몬&애플릿&바탕화면 설정
 Cinnamon & Applet & Wallpaper은 [CAW.md](https://github.com/2daeeun/my_linux_mint_setting/blob/master/CAW.md)에서 확인하자.
 ***
+### 크롬 설치
+```swift
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install python3-apt && sudo apt install ./google-chrome-stable_current_amd64.deb && sudo rm -rf /etc/apt/sources.list.d/google.list
+```
+예전의 내가 크롬 설치했던 방식 필요하면 history나 블로그 뒤져보기
+***
 ### 삭제 해야 할 프로그램
 * Celluloid
 * Hypnotix
@@ -16,7 +22,7 @@ Cinnamon & Applet & Wallpaper은 [CAW.md](https://github.com/2daeeun/my_linux_mi
 * Thunderbird
 * Firefox
 ```swift
-sudo apt-get --purge remove celluloid hypnotix pix* drawing onboard* rhythmbox* hexchat* hypnotix* thunderbird* firefox*
+sudo apt-get --purge remove celluloid hypnotix pix* drawing onboard* rhythmbox* hexchat* hypnotix* thunderbird* firefox* epiphany-browser
 ```
 ```swift
 sudo rm -Rf /etc/firefox/ /usr/lib/firefox* /usr/lib/firefox-addons/ /home/leedaeeun/.mozilla
@@ -95,12 +101,6 @@ sudo apt-get update && sudo apt-get install atom
 ```
 아톰 플러그인은 (Edit > preference > install)에 가서  
 atom-beautify, auto-indent, atom-alignment, autoclose-html, color-picker, highlight-selected, vim-mode-plus, minimap, emmet, Pigments, Linter, atom-html-preview  들을 설치하기
-***
-### 크롬 설치
-```swift
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install python3-apt && sudo apt install ./google-chrome-stable_current_amd64.deb && sudo rm -rf /etc/apt/sources.list.d/google.list
-```
-예전의 내가 크롬 설치했던 방식 필요하면 history나 블로그 뒤져보기
 ***
 ### Slimbook Battery 설치
 Intel CPU
