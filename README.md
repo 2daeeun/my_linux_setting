@@ -21,6 +21,7 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb &
 * Hypnotix
 * Thunderbird
 * Firefox
+* epiphany-browser
 ```swift
 sudo apt-get --purge remove celluloid hypnotix pix* drawing onboard* rhythmbox* hexchat* hypnotix* thunderbird* firefox* epiphany-browser
 ```
