@@ -224,7 +224,7 @@ CocInstall coc-java
 ```
 **기타 Coc 설치하기**
 ```swift
-CocInstall coc-python coc-pydocstring coc-sh coc-vimlsp coc-json coc-tsserver
+CocInstall coc-python coc-pydocstring coc-sh coc-vimlsp coc-json coc-tsserver coc-phpls
 ```
 
 CoC와 LSP 전반적으로 참조 사이트  
