@@ -10,7 +10,9 @@
 그 후 (설정 > 키보드 > 단축키)에서 (분류 > 런처 > 터미널 실행)에서 (Ctrl+Alt+T > Super+T)로 설정한다.  
 * 다운로드 폴더 열기 단축키는 (Categories>Launchers>Custom Shortcuts)에서 (Add custom shortcut)를 누른 뒤 Name 은 "다운로드 폴더 열기"로 Command는 "nemo Downloads"로 하고 단축키는 (Super+L)로 설정한다.
 * 동영상 폴더 열기 단축키는 (Categories>Launchers>Custom Shortcuts)에서 (Add custom shortcut)를 누른 뒤 Name 은 "동영상 폴더 열기"로 Command는 "nemo Videos"로 하고 단축키는 (Super+V)로 설정한다.
-* 사진 폴더 열기 단축키는 (Categories>Launchers>System>Hardware)에서 (디스플레이장치 다시 감지)의 단축키 설정값을 (Shift+Ctrl+Alt+P)로 재설정 한 뒤에, (Categories>Launchers>Custom Shortcuts)에서 (Add custom shortcut)를 누른 뒤 Name 은 "사진 폴더 열기"로 Command는 "nemo Pictures"로 하고 단축키는 (Super+P)로 설정한다.
+* 사진 폴더 열기 단축키는 우선 (Categories>Launchers>System>Hardware)에서 (디스플레이장치 다시 감지)의 단축키 설정값을 (Shift+Ctrl+Alt+*)로 재설정 한 뒤에, (Categories>Launchers>Custom Shortcuts)에서 (Add custom shortcut)를 누른 뒤 Name 은 "사진 폴더 열기"로 Command는 "nemo Pictures"로 하고 단축키는 (Super+P)로 설정한다.
+* 소리 설정 열기 단축키는 우선 (Categories>일반)에서 (데스크릿 보기)의 단축키 설정값을 (Shift+Ctrl+Alt+&)로 재설정 한 뒤에,
+(Categories>Launchers>Custom Shortcuts)에서 (Add custom shortcut)를 누른 뒤 Name 은 "소리 설정 열기 단축키"로 Command는 "cinnamon-settings sound"로 하고 단축키는 (Super+S)로 설정한다.
 ***
 ### 애플릿에서 설정 해야 할 것
 * CPU Temperature Indicator
