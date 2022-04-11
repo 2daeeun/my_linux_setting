@@ -53,7 +53,7 @@ sudo apt-get install vlc terminator kolourpaint numlockx tlp tlp-rdw git softwar
 ### 학교 수업을 위해 ~~어쩔 수 없이~~ 설치해야 할 프로그램
 * Band
 ```swift
-wget https://ssl.pstatic.net/cmstatic/desktop/v1.10.9/BAND-1.10.9-amd64.deb && sudo dpkg -i BAND-1.10.9-amd64.deb
+wget https://ssl.pstatic.net/cmstatic/desktop/v1.10.10/BAND-1.10.10-amd64.deb && sudo dpkg -i BAND-1.10.10-amd64.deb
 ```
 * Band 설치하면서 libappindicator3-1 의존성 문제 생길 경우 
 ```swift
