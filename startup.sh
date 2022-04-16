@@ -1,4 +1,5 @@
 #!/bin/bash
+#sudo wget -P /etc/profile.d/ https://raw.githubusercontent.com/2daeeun/my_linux_mint_setting/master/startup.sh
 
 #Thinkpad_trackpoint_speed(부팅시_빨콩_속도조절)
 xinput --set-prop "TPPS/2 Elan TrackPoint" "libinput Accel Speed" -1.0 &
