@@ -89,6 +89,10 @@ mkdir ~/.config/terminator && wget https://raw.githubusercontent.com/2daeeun/my_
 ```swift
 sudo wget -P /etc/profile.d/ https://raw.githubusercontent.com/2daeeun/my_linux_mint_setting/master/startup.sh
 ```
+### ZIP & UNZIP 한글 깨짐
+```swift
+sudo echo -e 'export UNZIP=\042-O cp949\042\nexport ZIPINFO=\042-O cp949\042' >> /etc/profile
+```
 ***
 ### 아톰 설치
 ```swift
