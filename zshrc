@@ -14,7 +14,7 @@ source $ZSH/oh-my-zsh.sh
 
 #alias 설정
 alias powerup='sudo apt-get update && sudo apt-get upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y'
-alias rrm="mv -t /home/leedaeeun/.local/share/Trash/files"
+alias rrm="sudo mv -t /home/leedaeeun/.local/share/Trash/files"
 
 #unzip 한글 깨짐 방지
 export UNZIP="-O cp949"
