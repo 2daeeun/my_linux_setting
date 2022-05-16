@@ -29,7 +29,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 ### alias 설정
 ```swift
 alias powerup="sudo apt-get update && sudo apt-get upgrade -y && sudo apt autoremove -y && sudo apt autoclean -y"
-alias rrm="mv -t /home/leedaeeun/.local/share/Trash/files"
+alias rrm="sudo mv -t /home/leedaeeun/.local/share/Trash/files"
 ```
 .zshrc 파일에서 위의 alias 라인 삽입
 ***
