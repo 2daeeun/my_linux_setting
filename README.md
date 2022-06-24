@@ -1,8 +1,9 @@
 # My Linux Mint Setting
 This is my personal Linux Mint setting. 
 ***
-### 시나몬&애플릿&바탕화면 설정
-Cinnamon & Applet & Wallpaper은 [CAW.md](https://github.com/2daeeun/my_linux_mint_setting/blob/master/CAW.md)에서 확인하자.
+### 리눅스 민트에서 하는 작업
+* 설치&삭제 할 프로그램([RI.md](https://github.com/2daeeun/my_linux_setting/blob/master/RI.md))
+* 시나몬&애플릿&바탕화면 설정([CAW.md](https://github.com/2daeeun/my_linux_setting/blob/master/CAW.md))
 ***
 ### 크롬 설치
 ```swift
