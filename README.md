@@ -2,54 +2,14 @@
 This is my personal Linux Mint setting. 
 ***
 ### 리눅스 민트에서 하는 작업
-* 설치&삭제 할 프로그램([RI.md](https://github.com/2daeeun/my_linux_setting/blob/master/RI.md))
-* 시나몬&애플릿&바탕화면 설정([CAW.md](https://github.com/2daeeun/my_linux_setting/blob/master/CAW.md))
+* 설치&삭제 할 프로그램([RI.md](https://github.com/2daeeun/my_linux_setting/blob/master/linux_mint_cinnamon/RI.md))
+* 시나몬&애플릿&바탕화면 설정([CAW.md](https://github.com/2daeeun/my_linux_setting/blob/master/linux_mint_cinnamon/CAW.md))
 ***
 ### 크롬 설치
 ```swift
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install python3-apt && sudo apt install ./google-chrome-stable_current_amd64.deb && sudo rm -rf /etc/apt/sources.list.d/google.list
 ```
 예전의 내가 크롬 설치했던 방식 필요하면 history나 블로그 뒤져보기
-***
-### 삭제 해야 할 프로그램
-* Celluloid
-* Hypnotix
-* Pix
-* Drawing
-* Onboard
-* Rhythmbox
-* Hexchat
-* Hypnotix
-* Thunderbird
-* Firefox
-* epiphany-browser
-```swift
-sudo apt-get --purge remove celluloid hypnotix pix* drawing onboard* rhythmbox* hexchat* hypnotix* thunderbird* firefox* epiphany-browser
-```
-```swift
-sudo rm -Rf /etc/firefox/ /usr/lib/firefox* /usr/lib/firefox-addons/ /home/leedaeeun/.mozilla
-```
-***
-### 설치 해야 할 프로그램
-* Vlc
-* Terminator
-* Kolourpaint
-* Numlock 활성화(설치 후 Login Window -> Settings에서 Activate numlock 선택하기)
-* tlp & tlp-rdw
-* git
-* PPA 지원
-* curl
-* aria2
-* stdio.h 해더파일
-* 나눔폰트
-* 카메라(cheese)
-* Tor 브라우저
-* Virtualbox (의존성 문제 있으면 [이곳](https://www.virtualbox.org/wiki/Linux_Downloads)에서 직접 다운 받기)
-* Parcellite(클립보드)(단축키는 Ctrl+Alt+H)
-* barrier
-```swift
-sudo apt-get install vlc terminator kolourpaint numlockx tlp tlp-rdw git software-properties-common curl aria2 libc6-dev fonts-nanum cheese torbrowser-launcher virtualbox parcellite barrier -y
-```
 ***
 ### 학교 수업을 위해 ~~어쩔 수 없이~~ 설치해야 할 프로그램
 * Band
