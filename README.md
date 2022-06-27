@@ -39,7 +39,7 @@ sudo wget -P /usr/share/fonts https://github.com/ryanoasis/nerd-fonts/raw/master
 ***
 ### 터미네이터 설정 
 ```swift
-mkdir ~/.config/terminator && wget https://raw.githubusercontent.com/2daeeun/my_linux_mint_setting/master/config && mv config ~/.config/terminator
+mkdir ~/.config/terminator && wget https://raw.githubusercontent.com/2daeeun/my_linux_setting/master/config && mv config ~/.config/terminator
 ```
 ***
 ### 부팅 시 자동실행 명령어 등록
@@ -48,7 +48,7 @@ mkdir ~/.config/terminator && wget https://raw.githubusercontent.com/2daeeun/my_
 * 부팅시 fcitx를 이용해 한글 활성화
 * 부팅시 tlp 자동 실행
 ```swift
-sudo wget -P /etc/profile.d/ https://raw.githubusercontent.com/2daeeun/my_linux_mint_setting/master/startup.sh
+sudo wget -P /etc/profile.d/ https://raw.githubusercontent.com/2daeeun/my_linux_setting/master/startup.sh
 ```
 ### ZIP & UNZIP 한글 깨짐
 ```swift
@@ -125,7 +125,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.g
 ***
 ### NeoVim 설정
 ```swift
-mkdir ~/.config/nvim && wget -P ~/.config/nvim/ https://raw.githubusercontent.com/2daeeun/my_linux_mint_setting/master/init.vim
+mkdir ~/.config/nvim && wget -P ~/.config/nvim/ https://raw.githubusercontent.com/2daeeun/my_linux_setting/master/init.vim
 ```
 플러그인 설치 :**:source %** 하고 **:PlugInstall** 입력  
 플러그인 제거 : 구성하는 줄 지우고 **:PlugClean** 입력  
@@ -227,7 +227,7 @@ sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CU
 sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 ```swift
-mv .zshrc .zshrc.bak && wget -O .zshrc https://raw.githubusercontent.com/2daeeun/my_linux_mint_setting/master/zshrc
+mv .zshrc .zshrc.bak && wget -O .zshrc https://raw.githubusercontent.com/2daeeun/my_linux_setting/master/zshrc
 ```
 zshrc 파일을 어떻게 설정했는지에 대한 세부적인 내용은 [zshrcConfig.md](https://github.com/2daeeun/my_linux_mint_setting/blob/master/zshrcConfig.md) 참조
 ***
