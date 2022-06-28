@@ -30,7 +30,7 @@ VirtualBox 이미지 목록 확인 방법
 ***
 ### 토토로 바탕화면 설정
 ```swift
-sudo wget -P ../../ https://github.com/largesilver/my_linux_mint_setting/raw/master/totoro.png
+sudo wget -P ../../ https://raw.githubusercontent.com/2daeeun/my_linux_setting/master/totoro.png
 ```
 [사진출처](https://wallpaperaccess.com/download/totoro-pc-1998829)
 (메뉴 > 배경화면)에서 배경화면 설정하기
