@@ -9,3 +9,5 @@ rfkill block bluetooth &
 fcitx &
 #부팅시_tlp_자동_실행
 tlp start &
+#numlockx_자동_실행
+numlockx &
