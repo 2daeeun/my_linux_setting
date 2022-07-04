@@ -189,15 +189,11 @@ CocInstall coc-java
 ```
 **기타 Coc 설치하기**
 ```swift
-CocInstall coc-python coc-pydocstring coc-sh coc-vimlsp coc-json coc-tsserver coc-phpls
+CocInstall coc-python coc-pydocstring coc-sh coc-vimlsp coc-json coc-tsserver coc-phpls coc-xml
 ```
 
 CoC와 LSP 전반적으로 참조 사이트  
-[Chris@Machine ~Neovim Intellisense with coc](https://www.chrisatmachine.com/Neovim/04-vim-coc/)  
-[coc.nvim](https://github.com/neoclide/coc.nvim)  
 **[coc-extnsions](https://github.com/neoclide/coc.nvim/wiki/Using-coc-extensions)** <-원하는 LSP서버는 주로 여기를 참조하자  
-[기계인간 ~coc.nvim 설치](https://johngrib.github.io/wiki/vim-auto-completion/)  
-https://tyanjournal.com/tips/neovim-c-ide/
 ***
 ### zsh 및 oh-my-zsh 설치
 ```swift

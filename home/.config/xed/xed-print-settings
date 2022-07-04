@@ -1,0 +1,7 @@
+[Print Settings]
+print-pages=all
+collate=false
+scale=100
+page-set=all
+printer=default
+reverse=false
