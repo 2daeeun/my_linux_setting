@@ -386,22 +386,22 @@
             <!--    ┗━━━━━━━━━━━┛┗━━━━━━━━━━━━━━━━━━┛-->
 
  <!-- 창을 모니터로 이동-->
-            <keybind key="S-A-Up">
+            <keybind key="S-W-Up">
                 <action name="MoveResizeTo">
                     <monitor>next</monitor>
                 </action>
             </keybind>
-            <keybind key="S-A-Down">
+            <keybind key="S-W-Down">
                 <action name="MoveResizeTo">
                     <monitor>next</monitor>
                 </action>
             </keybind>
-            <keybind key="S-A-Left">
+            <keybind key="S-W-Left">
                 <action name="MoveResizeTo">
                     <monitor>next</monitor>
                 </action>
             </keybind>
-            <keybind key="S-A-Right">
+            <keybind key="S-W-Right">
                 <action name="MoveResizeTo">
                     <monitor>next</monitor>
                 </action>
