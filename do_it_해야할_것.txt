@@ -10,4 +10,6 @@ ln -f menu.xml ~/.config/openbox/menu.xml
 무선랜 연결             : nmtui
 시스템 모니터링         : htop  -> 설정 파일 스크립트 짜기
                           conky -> 설정 파일 스크립트 짜기
+배터리 체크 명령어      : apci
+밝기 조절 명령어        : brightnessctl
 
