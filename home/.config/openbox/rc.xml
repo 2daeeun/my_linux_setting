@@ -259,8 +259,36 @@
                     <command>scrot '%Y-%m-%d_%H-%M-%S_$wx$h.png' -e 'mv $f ~/Pictures/ &amp; viewnior ~/Pictures/$f'</command>
                 </action>
             </keybind>
+           <keybind key="W-S-s">
+                <action name="Execute">
+                    <command>scrot -s '%Y-%m-%d_%H-%M-%S_$wx$h.png' -e 'mv $f ~/Pictures/ &amp; viewnior ~/Pictures/$f'</command>
+                </action>
+            </keybind>
 
 
+            <!-- 소리 단축키-->
+            <keybind key="W-F2">
+                <action name="Execute">
+                    <command>amixer set 'Master' 10%-</command>
+                </action>
+            </keybind>
+            <keybind key="W-F3">
+                <action name="Execute">
+                    <command>amixer set 'Master' 10%+</command>
+                </action>
+            </keybind>
+
+            <!-- 밝기 단축키-->
+            <keybind key="A-F5">
+                <action name="Execute">
+                    <command>brightnessctl set 10%-</command>
+                </action>
+            </keybind>
+            <keybind key="A-F6">
+                <action name="Execute">
+                    <command>brightnessctl set 10%+</command>
+                </action>
+            </keybind>
 
 
             <keybind key="A-Tab">
@@ -306,6 +334,35 @@
                     <command>nemo</command>
                 </action>
             </keybind>
+            <keybind key="W-l">
+                <action name="Execute">
+                    <startupnotify>
+                        <enabled>true</enabled>
+                        <name>nemo</name>
+                    </startupnotify>
+                    <command>nemo ~/Downloads</command>
+                </action>
+            </keybind>
+            <keybind key="W-o">
+                <action name="Execute">
+                    <startupnotify>
+                        <enabled>true</enabled>
+                        <name>nemo</name>
+                    </startupnotify>
+                    <command>nemo ~/Documents</command>
+                </action>
+            </keybind>
+            <keybind key="W-p">
+                <action name="Execute">
+                    <startupnotify>
+                        <enabled>true</enabled>
+                        <name>nemo</name>
+                    </startupnotify>
+                    <command>nemo ~/Pictures</command>
+                </action>
+            </keybind>
+
+
             <keybind key="W-t">
                 <action name="Execute">
                     <startupnotify>
@@ -322,15 +379,6 @@
                         <name>Web Browser</name>
                     </startupnotify>
                     <command>x-www-browser</command>
-                </action>
-            </keybind>
-            <keybind key="W-l">
-                <action name="Execute">
-                    <startupnotify>
-                        <enabled>true</enabled>
-                        <name>Lock screen</name>
-                    </startupnotify>
-                    <command>xscreensaver-command -lock</command>
                 </action>
             </keybind>
             <keybind key="W-e">

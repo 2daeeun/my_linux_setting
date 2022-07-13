@@ -12,6 +12,7 @@ ln -f menu.xml ~/.config/openbox/menu.xml
                           conky -> 설정 파일 스크립트 짜기
 
 zsh                     : powerlevel10k 스크립트 짜기
+
 배터리 체크 명령어      : acpi
 밝기 조절 명령어        : brightnessctl
                             brightnessctl set 100%

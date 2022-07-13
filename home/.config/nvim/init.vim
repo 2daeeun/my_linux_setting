@@ -37,7 +37,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}     " Use release branch
 Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}             " Or latest tag
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}      " Or build from source code by use yarn: https://yarnpkg.com
 Plug 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn build', 'branch': 'main' }    "파이썬 자동 완성
-Plug 'yaegassy/coc-pydocstring', {'do': 'yarn install --frozen-lockfile'} "coc-pydocstring
+Plug 'yaegassy/coc-pydocstring', {'do': 'yarn install --frozen-lockfile'}                               "coc-pydocstring
 Plug 'davidhalter/jedi-vim'                         "자동완성 라이브러리
 Plug 'vim-scripts/indentLine.vim'                   "들여쓰기 안내선
 Plug 'jiangmiao/auto-pairs'                         "대괄호, 괄호, 따옴표 등을 쌍으로 삽입하거나 삭제.
@@ -58,7 +58,7 @@ Plug 'ryanoasis/vim-devicons'                       "NERDTree에 예쁜 아이�
 "Plug 'ap/vim-css-color'                            "css 소스코딩 하는 동안 색상들을 미리 보는 것
 "Plug 'ying17zi/vim-live-latex-preview'             "vim-live-latex-previe
 "-----기타-----
-
+Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }     "Markdown Preview (실행은 :MarkdownPreview , 중단은 :MarkdownPreviewStop)
 "-----유용하지만 사용 안하는 플러그인-----
 "Plug 'preservim/tagbar'                            "현재 파일내의 class, struct, prototype, typedef, macro 등을 요약하여 표시한다.
 "Plug 'tpope/vim-fugitive'                          "git과 함께 쓰면 좋은 것
@@ -108,6 +108,8 @@ autocmd fileType java nnoremap <buffer> <F9> :exec '!javac' shellescape(expand('
 "----- Indent Guides(들여쓰기 안내선) -----
 let g:indentLine_char = '┆'
 let g:indentLine_color_term = 256
+
+
 
 
 "이거 복사 붙여넣기 끝난 뒤에는 nvim에서 source % 하고 PlugInstall 하고 UpdateRemotePlugins 입력하기(플러그인 삭제는 PlugClean)
