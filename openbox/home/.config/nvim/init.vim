@@ -110,6 +110,4 @@ let g:indentLine_char = '┆'
 let g:indentLine_color_term = 256
 
 
-
-
 "이거 복사 붙여넣기 끝난 뒤에는 nvim에서 source % 하고 PlugInstall 하고 UpdateRemotePlugins 입력하기(플러그인 삭제는 PlugClean)

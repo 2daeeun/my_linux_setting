@@ -1,9 +1,14 @@
 # My Linux Mint Setting
 This is my personal Linux Mint setting. 
 ***
-### 리눅스 민트에서 하는 작업
-* 설치&삭제 할 프로그램([RI.md](https://github.com/2daeeun/my_linux_setting/blob/master/linux_mint_cinnamon/RI.md))
-* 시나몬&애플릿&바탕화면 설정([CAW.md](https://github.com/2daeeun/my_linux_setting/blob/master/linux_mint_cinnamon/CAW.md))
+### 리눅스 민트 시나몬에서 하는 작업
+* 설치&삭제 할 프로그램([mint_RI.md](https://github.com/2daeeun/my_linux_setting/blob/master/linux_mint_cinnamon/mint_RI.md))
+* 시나몬&애플릿&바탕화면 설정([mint_CAW.md](https://github.com/2daeeun/my_linux_setting/blob/master/linux_mint_cinnamon/mint_CAW.md))
+* .cinnamon 디렉터리를 home 디렉터리에 옮기기
+
+### Openbox에서 하는 작업
+* 설치&삭제 할 프로그램([openbox_RI.md](https://github.com/2daeeun/my_linux_setting/blob/master/openbox/openbox_RI.md))
+
 ***
 ### 크롬 설치
 ```swift
@@ -41,12 +46,21 @@ sudo wget -P /usr/share/fonts https://github.com/ryanoasis/nerd-fonts/raw/master
 ```swift
 mkdir ~/.config/terminator && wget https://raw.githubusercontent.com/2daeeun/my_linux_setting/master/config && mv config ~/.config/terminator
 ```
+민트 시나몬에도 파일은 있지만 openbox에서 주로 수정함.  
+openbox 폴더가 메인임.
 ***
 ### 부팅 시 자동실행 명령어 등록
-* 부팅시 빨콩 속도조절
-* 부팅시 블루투스 비활성화
-* 부팅시 fcitx를 이용해 한글 활성화
-* 부팅시 tlp 자동 실행
+
+* 빨콩 속도 조절
+* 트랙패드 속도 조절
+* 블루투스 비활성화
+* fcitx한글 활성화
+* tlp 실행
+* numlock 활성화
+* 바탕화면(nitrogen) 설정
+* ~~화면 잠금(GNOME Screensaver)~~
+* conky
+
 ```swift
 sudo wget -P /etc/profile.d/ https://raw.githubusercontent.com/2daeeun/my_linux_setting/master/startup.sh
 ```
