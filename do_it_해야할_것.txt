@@ -1,11 +1,12 @@
 ---- openbox 세팅 끝나고 깃헙 readme에 추가해야 할 내용 ----
+xscreensaver
+linux power management settings tools
+xfce power manager
 
 ln -f rc.xml ~/.config/openbox/rc.xml
 ln -f menu.xml ~/.config/openbox/menu.xml
 
-
 ---- 작성해야 하는 것들 ----
-
 네트워크 모니터링       : sudo iftop -i wlp3s0
 시스템 모니터링         : htop  -> 설정 파일 스크립트 짜기
                           conky -> 설정 파일 스크립트 짜기
