@@ -8,13 +8,7 @@ This is my personal Linux Mint setting.
 
 ### Openbox에서 하는 작업
 * 설치&삭제 할 프로그램([openbox_RI.md](https://github.com/2daeeun/my_linux_setting/blob/master/openbox/openbox_RI.md))
-
-***
-### 크롬 설치
-```swift
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install python3-apt && sudo apt install ./google-chrome-stable_current_amd64.deb && sudo rm -rf /etc/apt/sources.list.d/google.list
-```
-예전의 내가 크롬 설치했던 방식 필요하면 history나 블로그 뒤져보기
+* 설정해야 할 것([openbox_CAW.md](https://github.com/2daeeun/my_linux_setting/blob/master/openbox/openbox_CAW.md))
 ***
 ### 학교 수업을 위해 ~~어쩔 수 없이~~ 설치해야 할 프로그램
 * Band
@@ -37,33 +31,17 @@ sudo apt install v4l2loopback-dkms && sudo apt-get install ffmpeg && sudo apt-ge
 wget https://zoom.us/client/latest/zoom_amd64.deb && sudo dpkg -i zoom_amd64.deb
 ```
 ***
+### 크롬 설치
+```swift
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install python3-apt && sudo apt install ./google-chrome-stable_current_amd64.deb && sudo rm -rf /etc/apt/sources.list.d/google.list
+```
+예전의 내가 크롬 설치했던 방식 필요하면 history나 블로그 뒤져보기
+***
 ### Nerd Fonts 설치
 ```swift
 sudo wget -P /usr/share/fonts https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf && sudo fc-cache -f -v
 ```
 ***
-### 터미네이터 설정 
-```swift
-mkdir ~/.config/terminator && wget https://raw.githubusercontent.com/2daeeun/my_linux_setting/master/config && mv config ~/.config/terminator
-```
-민트 시나몬에도 파일은 있지만 openbox에서 주로 수정함.  
-openbox 폴더가 메인임.
-***
-### 부팅 시 자동실행 명령어 등록
-
-* 빨콩 속도 조절
-* 트랙패드 속도 조절
-* 블루투스 비활성화
-* fcitx한글 활성화
-* tlp 실행
-* numlock 활성화
-* 바탕화면(nitrogen) 설정
-* ~~화면 잠금(GNOME Screensaver)~~
-* conky
-
-```swift
-sudo wget -P /etc/profile.d/ https://raw.githubusercontent.com/2daeeun/my_linux_setting/master/startup.sh
-```
 ### ZIP & UNZIP 한글 깨짐
 ```swift
 echo -e '\nexport UNZIP=\042-O cp949\042\nexport ZIPINFO=\042-O cp949\042' >> /etc/profile
@@ -124,27 +102,6 @@ echo "deb [signed-by=/usr/share/keyrings/yarnkey.gpg] https://dl.yarnpkg.com/deb
 ```swift
 sudo apt-get update && sudo apt-get install yarn -y
 ```
-***
-### NeoVim 설치
-```swift
-sudo apt-get install software-properties-common fuse libfuse2 git python3-pip ack-grep -y && sudo apt-get update && sudo apt-get install neovim
-```
-```swift
-pip3 install --user neovim
-```
-```swift
-curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
-터미널에서 'v' 만으로 nvim을 실행하고 싶으면 ~/.zshrc 에서 마지막 줄에 alias v='nvim' 를 입력하면 된다.
-***
-### NeoVim 설정
-```swift
-mkdir ~/.config/nvim && wget -P ~/.config/nvim/ https://raw.githubusercontent.com/2daeeun/my_linux_setting/master/init.vim
-```
-플러그인 설치 :**:source %** 하고 **:PlugInstall** 입력  
-플러그인 제거 : 구성하는 줄 지우고 **:PlugClean** 입력  
-플러그인 업데이트 : **:PlugUpdate** 하고 **:PlugUpgrade** 입력  
-(nvim이 아닌 일반 vim 사용할 때는 /etc/vim 에 가서 vimrc 파일을 수정한다.)  
 ***
 
 
