@@ -22,12 +22,13 @@
 * obconf
 * rofi
 * nitrogen
+* xauth
 * xorg
 * xserver-xorg-core
 * xinit
 
 ```swift
-sudo apt-get install vlc terminator kolourpaint numlockx tlp tlp-rdw git software-properties-common curl fuse libfuse2 git python3-pip ack-grep neovim aria2 libc6-dev fonts-nanum cheese parcellite barrier openbox obconf rofi nitrogen xorg xserver-xorg-core xinit -y
+sudo apt-get install vlc terminator kolourpaint numlockx tlp tlp-rdw git software-properties-common curl fuse libfuse2 git python3-pip ack-grep neovim aria2 libc6-dev fonts-nanum cheese parcellite barrier openbox obconf rofi nitrogen xauth && sudo apt-get update && sudo apt-get install xorg xserver-xorg-core xinit -y
 ```
 
 

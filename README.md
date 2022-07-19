@@ -177,9 +177,18 @@ chsh -s /usr/bin/zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
 ***
-### oh-my-zsh 폰트 깨짐 방지
+#### zsh 관련 설치
+* oh-my-zsh 폰트 깨짐 방지
 ```swift
 sudo apt-get install fonts-powerline && git clone https://github.com/powerline/fonts.git && cd fonts && ./install.sh && cd ~ && sudo rm -rf /home/leedaeeun/fonts
+```
+* zsh 구문 강조 플러그인
+```swift
+sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+* zsh 자동 제안 플러그인j
+```swift
+sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 ***
 ### zshrc 파일 설정
@@ -187,15 +196,12 @@ sudo apt-get install fonts-powerline && git clone https://github.com/powerline/f
 * zsh 플러그인 설치
 * alias 설정
 * unzip 한글 깨짐 방지
-```swift
-sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-```
-```swift
-sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-```
+
+
 ```swift
 mv .zshrc .zshrc.bak && wget -O .zshrc https://raw.githubusercontent.com/2daeeun/my_linux_setting/master/zshrc
 ```
+
 zshrc 파일을 어떻게 설정했는지에 대한 세부적인 내용은 [zshrcConfig.md](https://github.com/2daeeun/my_linux_mint_setting/blob/master/zshrcConfig.md) 참조
 ***
 ### 기본 쉘 확인
