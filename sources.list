@@ -1,5 +1,5 @@
 # deb cdrom:[Debian GNU/Linux 11.4.0 _Bullseye_ - Official amd64 NETINST 20220709-10:31]/ bullseye main
-
+#
 #deb cdrom:[Debian GNU/Linux 11.4.0 _Bullseye_ - Official amd64 NETINST 20220709-10:31]/ bullseye main
 
 deb http://ftp.kaist.ac.kr/debian/ bullseye main contrib non-free
