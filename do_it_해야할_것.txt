@@ -1,7 +1,8 @@
----- openbox 세팅 끝나고 깃헙 readme에 추가해야 할 내용 ----
+﻿---- openbox 세팅 끝나고 깃헙 readme에 추가해야 할 내용 ----
 xscreensaver
 linux power management settings tools
 xfce power manager
+apt install firmware-iwlwifi
 
 cp -r /home/leedaeeun/Documents/my_linux_setting/openbox/leedaeeun /home
 
