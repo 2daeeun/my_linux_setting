@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Google Chrome
+Comment=Internet
+TryExec=mousepad
+Exec=google-chrome 
+Icon=google-chrome
+Terminal=false
+StartupNotify=true
+Type=Application
+Categories=Utility;TextEditor;
+OnlyShowIn=XFCE;
+X-XFCE-Source=file:///usr/share/applications/xfce-text-editor.desktop
+Path=

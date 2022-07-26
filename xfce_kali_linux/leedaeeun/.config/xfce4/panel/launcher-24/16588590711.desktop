@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Terminator
+Comment=terminal
+Exec=terminator
+Icon=utilities-terminal_su
+Path=
+Terminal=false
+StartupNotify=true

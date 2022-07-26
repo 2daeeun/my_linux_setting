@@ -39,9 +39,9 @@ cp -r /home/leedaeeun/.config/htop /home/leedaeeun/.config/nvim /home/leedaeeun/
 ```swift
 cp -r /home/leedaeeun/.p10k.zsh /home/leedaeeun/.zshrc /home/leedaeeun/Documents/my_linux_setting/xfce_kali_linux/leedaeeun
 ```
-* local (xfce-perchannel-xml) ▸ github
+* local (xfce) ▸ github
 ```swift
-cp -r /home/leedaeeun/.config/xfce4/xfconf/xfce-perchannel-xml /home/leedaeeun/Documents/my_linux_setting/xfce_kali_linux/leedaeeun/.config/xfce4/xfconf/
+cp -r /home/leedaeeun/.config/xfce4/ /home/leedaeeun/Documents/my_linux_setting/xfce_kali_linux/leedaeeun/.config/
 ```
 ***
 ### 언어 설정
