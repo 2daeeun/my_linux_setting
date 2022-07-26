@@ -1,0 +1,23 @@
+﻿---- openbox 세팅 끝나고 깃헙 readme에 추가해야 할 내용 ----
+xscreensaver
+linux power management settings tools
+xfce power manager
+apt install firmware-iwlwifi
+
+cp -r /home/leedaeeun/Documents/my_linux_setting/openbox/leedaeeun /home
+
+cp -r /home/leedaeeun/.config/htop /home/leedaeeun/.config/nitrogen /home/leedaeeun/.config/nvim /home/leedaeeun/.config/openbox /home/leedaeeun/.config/terminator /home/leedaeeun/.config/xed /home/leedaeeun/Documents/my_linux_setting/openbox/leedaeeun/.config
+
+cp -r /home/leedaeeun/.p10k.zsh /home/leedaeeun/.zshrc /home/leedaeeun/Documents/my_linux_setting/openbox/leedaeeun
+
+
+
+
+
+---- 작성해야 하는 것들 ----
+네트워크 모니터링       : sudo iftop -i wlp3s0
+시스템 모니터링         : htop  -> 설정 파일 스크립트 짜기
+                          conky -> 설정 파일 스크립트 짜기
+
+zsh                     : powerlevel10k 스크립트 짜기
+
