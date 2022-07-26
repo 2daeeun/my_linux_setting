@@ -41,7 +41,7 @@ cp -r /home/leedaeeun/.p10k.zsh /home/leedaeeun/.zshrc /home/leedaeeun/Documents
 ```
 * local (xfce-perchannel-xml) ▸ github
 ```swift
-cp -r /home/leedaeeun/.config/xfce4/xfconf/xfce-perchannel-xml /home/leedaeeun/Documents/my_linux_setting/xfce_kali_linux/leedaeeun
+cp -r /home/leedaeeun/.config/xfce4/xfconf/xfce-perchannel-xml /home/leedaeeun/Documents/my_linux_setting/xfce_kali_linux/leedaeeun/.config/xfce4/xfconf/
 ```
 ***
 ### 언어 설정
