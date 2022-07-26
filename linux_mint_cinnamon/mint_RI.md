@@ -17,6 +17,11 @@ sudo apt-get --purge remove celluloid hypnotix pix* drawing onboard* rhythmbox* 
 sudo rm -Rf /etc/firefox/ /usr/lib/firefox* /usr/lib/firefox-addons/ /home/leedaeeun/.mozilla
 ```
 ***
+### 그놈 터미널 삭제
+```swift
+sudo apt-get --purge remove gnome-terminal gnome-terminal-data
+```
+***
 ### 설치 해야 할 프로그램
 * Vlc
 * Terminator
