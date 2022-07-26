@@ -28,7 +28,7 @@
 * xorg
 * xserver-xorg-core
 * xinit
-* firmware-amd-graphics libgl1-mesa-dri
+* firmware-amd-graphics libgl1-mesa-dri(nvim /etc/apt/sources.list에서 non-free확인)
 
 ```swift
 sudo apt-get install sudo vlc terminator kolourpaint numlockx tlp tlp-rdw git software-properties-common curl fuse libfuse2 git python3-pip ack-grep neovim aria2 libc6-dev fonts-nanum cheese parcellite barrier openbox obconf menu rofi nitrogen xauth xorg xserver-xorg-core xinit lightdm firmware-amd-graphics libgl1-mesa-dri -y

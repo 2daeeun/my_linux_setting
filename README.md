@@ -6,9 +6,14 @@ This is my personal Linux Mint setting.
 * 시나몬&애플릿&바탕화면 설정([mint_CAW.md](https://github.com/2daeeun/my_linux_setting/blob/master/linux_mint_cinnamon/mint_CAW.md))
 * .cinnamon 디렉터리를 home 디렉터리에 옮기기
 
-### Openbox에서 하는 작업
+### Openbox에서 하는 작업 ~~(때려침)~~
 * 설치&삭제 할 프로그램([openbox_RI.md](https://github.com/2daeeun/my_linux_setting/blob/master/openbox/openbox_RI.md))
 * 설정해야 할 것([openbox_CAW.md](https://github.com/2daeeun/my_linux_setting/blob/master/openbox/openbox_CAW.md))
+
+### Xfce (Kali linux)
+* 설치&삭제 할 프로그램([xfce_kali_linux_RI.md](https://github.com/2daeeun/my_linux_setting/blob/master/xfce_kali_linux/xfce_kali_linux_RI.md))
+* 설정해야 할 것([xfce_kali_linux_CAW.md](https://github.com/2daeeun/my_linux_setting/blob/master/xfce_kali_linux/xfce_kali_linux_CAW.md))
+
 ***
 ### 학교 수업을 위해 ~~어쩔 수 없이~~ 설치해야 할 프로그램
 * Band
@@ -33,13 +38,17 @@ wget https://zoom.us/client/latest/zoom_amd64.deb && sudo dpkg -i zoom_amd64.deb
 ***
 ### 크롬 설치
 ```swift
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install python3-apt && sudo apt install ./google-chrome-stable_current_amd64.deb && sudo rm -rf /etc/apt/sources.list.d/google.list
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && sudo apt install python3-apt && sudo apt install ./google-chrome-stable_current_amd64.deb && sudo rm -rf google-chrome-stable_current_amd64 && sudo rm -rf /etc/apt/sources.list.d/google.list
 ```
 예전의 내가 크롬 설치했던 방식 필요하면 history나 블로그 뒤져보기
 ***
 ### Nerd Fonts 설치
 ```swift
 sudo wget -P /usr/share/fonts https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf && sudo fc-cache -f -v
+```
+칼리 리눅스에서는
+```swift
+sudo wget -P /usr/share/fonts/truetype https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf && sudo fc-cache -f -v
 ```
 ***
 ### ZIP & UNZIP 한글 깨짐
@@ -195,26 +204,19 @@ sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CU
 sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 ***
-### zshrc 파일 설정
-* oh-my-zsh 테마 변경
-* zsh 플러그인 설치
-* alias 설정
-* unzip 한글 깨짐 방지
-
-
-```swift
-mv .zshrc .zshrc.bak && wget -O .zshrc https://raw.githubusercontent.com/2daeeun/my_linux_setting/master/zshrc
-```
-
-zshrc 파일을 어떻게 설정했는지에 대한 세부적인 내용은 [zshrcConfig.md](https://github.com/2daeeun/my_linux_mint_setting/blob/master/zshrcConfig.md) 참조
-***
 ### 기본 쉘 확인
 ```swift
 echo $SHELL
 ```
 만약 기본 쉘이 bash이면 [이 링크](https://nochoco-lee.tistory.com/350) 참고해서 쉘 바꾸기. 
 
+***
+### 기본 에디터 확인
+```swift
+update-alternatives --config editor
+```
 
+***
 ### 그놈 터미널 삭제
 ```swift
 sudo apt-get --purge remove gnome-terminal gnome-terminal-data
